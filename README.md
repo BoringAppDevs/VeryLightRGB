@@ -64,13 +64,11 @@ In our Windows 11 background test, Very Light RGB averaged **3.95 MB of private 
 
 Native mode lets supported devices run directly, without a separate SDK server. Additional devices use the bundled native driver worker when needed.
 
-*Measured on November 2, 2026, for approximately 60 seconds per app on the same Windows 11 PC with 16 logical processors. RAM is mean private physical memory; CPU is the share of the whole machine. Disk figures include measured program files, data, and caches; our full package includes the source archive. 1 GB = 1,000 MB. Effects and device coverage differed: OpenRGB ran without software animation, and Razer used an existing Synapse installation with shared components. These are local resource snapshots, not a startup-time or animation-speed ranking. [Method and limitations](docs/benchmarks/windows-apps-2026-11-02.md) · [Measurements](docs/benchmarks/windows-apps-2026-11-02.json).*
-
 ## Download once. Keep it fresh.
 
 **[Get the latest release](https://github.com/BoringAppDevs/VeryLightRGB/releases/latest)** for the Windows installer, portable ZIP, source archive, and SHA-256 checksums. Install a newer build over the existing app to keep your settings.
 
-Every push to `main` automatically builds and tests the app, then publishes the downloads to GitHub Releases. The installer is currently unsigned; `SHA256SUMS.txt` is included with each release.
+New app versions are published once under a matching `vX.Y.Z` tag. Documentation updates do not rebuild or republish the app. The installer is currently unsigned; `SHA256SUMS.txt` is included with each release.
 
 ## Help make it better
 

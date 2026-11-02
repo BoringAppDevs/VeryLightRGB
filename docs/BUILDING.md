@@ -21,11 +21,15 @@ The first build downloads pinned LLVM-MinGW and native-driver source archives, v
 
 ## Automatic releases
 
-[release.yml](../.github/workflows/release.yml) runs on every push to `main`, and can also be dispatched manually on `main`. It checks public source, builds on a Windows runner, runs native and driver-core tests, packages the app, and checks binaries for personal Windows paths and account SIDs.
+[release.yml](../.github/workflows/release.yml) runs when a stable version tag such as `v1.2.1` is pushed, or when manually dispatched on `main`. Ordinary branch pushes, README edits, and benchmark-data updates do not start a release build.
 
-Only a successful run uploads a draft release and then publishes it as the latest release. Each run has a distinct tag, `v<app-version>-build.<run-number>.<attempt>`, so the source commit behind a download stays identifiable. Stable asset names keep the README's latest-download links working. A newer push cancels an older in-progress run.
+Before allocating a Windows build runner, a lightweight job checks that the app header, Windows resources, installer, and version tag agree. It queries all release pages and skips any version that already has a canonical or legacy build-number release, including drafts. API failures stop the run. Re-running a workflow does not rebuild or overwrite an existing release.
 
-GitHub's repository-scoped `GITHUB_TOKEN` supplies release access through `contents: write`. No personal token or signing key is committed. Actions are pinned to commit SHAs. Compilers and pinned dependency sources are cached; release payloads and user data are not.
+A new version then builds and tests on Windows, packages the app, and checks binary metadata for personal Windows paths and account SIDs. Only a successful run uploads a draft release and publishes it as the latest release under the single tag `v<app-version>`. Stable asset names keep the README's latest-download links working. Release runs are serialized, and existing releases are never overwritten.
+
+To publish the next version, update `native/include/core.hpp`, `native/assets/app.rc`, and `installer/VeryLightRGB.iss` together, commit the changes, and push the matching version tag. A manual run on `main` publishes only if that app version has no existing release. Resolve an incomplete draft deliberately before retrying its version.
+
+GitHub's repository-scoped `GITHUB_TOKEN` supplies read access for planning and `contents: write` only for the release job. No personal token or signing key is committed. Actions are pinned to commit SHAs. Compilers and pinned dependency sources are cached; release payloads and user data are not.
 
 The distributed app is unsigned. `SHA256SUMS.txt` verifies downloads against the hashes published with that release; it is not a code-signing certificate.
 

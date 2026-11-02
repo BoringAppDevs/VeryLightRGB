@@ -2,19 +2,50 @@ name: Build and release Windows app
 
 on:
   push:
-    branches: [main]
+    tags: ['v[0-9]+.[0-9]+.[0-9]+']
   workflow_dispatch:
 
 permissions:
-  contents: write
+  contents: read
 
 concurrency:
-  group: windows-release-${{ github.ref }}
-  cancel-in-progress: true
+  group: windows-release
+  cancel-in-progress: false
 
 jobs:
+  plan:
+    runs-on: ubuntu-latest
+    outputs:
+      version: ${{ steps.plan.outputs.version }}
+      tag: ${{ steps.plan.outputs.tag }}
+      should_release: ${{ steps.plan.outputs.should_release }}
+    steps:
+      - name: Check out source
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+
+      - name: Set up Node.js
+        uses: actions/setup-node@249970729cb0ef3589644e2896645e5dc5ba9c38 # v6
+        with:
+          node-version: '22'
+
+      - name: Test release policy and check tracked source
+        run: |
+          node --test scripts/release-plan.test.mjs
+          node scripts/verify-public-source.mjs --all
+
+      - name: Skip already released versions before starting a Windows build
+        id: plan
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: node scripts/release-plan.mjs
+
   release:
-    if: github.ref == 'refs/heads/main'
+    needs: plan
+    if: needs.plan.outputs.should_release == 'true'
+    permissions:
+      contents: write
     runs-on: windows-2025
     timeout-minutes: 60
     defaults:
@@ -69,7 +100,10 @@ jobs:
         run: |
           ./scripts/prepare-release.ps1
           $version = (Get-Item artifacts/VeryLightRGB/VeryLightRGB.exe).VersionInfo.ProductVersion
+          if ($version -ne $env:PLANNED_VERSION) { throw 'Built app version differs from the planned release.' }
           "version=$version" >> $env:GITHUB_OUTPUT
+        env:
+          PLANNED_VERSION: ${{ needs.plan.outputs.version }}
 
       - name: Publish installer, portable app, source, and checksums
         env:
@@ -77,9 +111,9 @@ jobs:
           GH_REPO: ${{ github.repository }}
           RELEASE_VERSION: ${{ steps.package.outputs.version }}
           RELEASE_COMMIT: ${{ github.sha }}
-          RELEASE_BUILD: ${{ github.run_number }}.${{ github.run_attempt }}
+          RELEASE_TAG: ${{ needs.plan.outputs.tag }}
         run: |
-          $tag = "v$env:RELEASE_VERSION-build.$env:RELEASE_BUILD"
+          $tag = $env:RELEASE_TAG
           $notes = @"
           Download **VeryLightRGB-Setup-win-x64.exe** for the standard Windows installation.
           A portable ZIP is also available. Windows 10/11 x64; no development tools are needed.

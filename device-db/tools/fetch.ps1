@@ -1,9 +1,14 @@
-param([switch]$Offline,[switch]$Core)
+param([switch]$Offline,[switch]$Core,[string[]]$SourceId=@())
 $ErrorActionPreference = 'Stop'
 $repo = Split-Path (Split-Path $PSScriptRoot -Parent) -Parent
 $lockFile = if ($Core) { 'device-db/core/sources.lock.json' } else { 'device-db/sources.lock.json' }
 $lock = Get-Content (Join-Path $repo $lockFile) -Raw | ConvertFrom-Json
-foreach ($source in $lock.sources) {
+$sources=@($lock.sources)
+if($SourceId.Count){
+    foreach($id in $SourceId){if($id -notin $sources.id){throw "Unknown pinned source: $id"}}
+    $sources=@($sources | Where-Object {$_.id -in $SourceId})
+}
+foreach ($source in $sources) {
     $directory = Join-Path $repo $source.cacheDirectory
     $archive = Join-Path (Split-Path $directory -Parent) ($source.id + '.tar.gz')
     if ($source.vendoredArchive) {

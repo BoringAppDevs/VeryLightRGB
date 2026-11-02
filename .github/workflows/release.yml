@@ -41,6 +41,7 @@ jobs:
             local/toolchain
             local/inno-setup
           key: windows-build-tools-${{ hashFiles('scripts/setup-native-toolchain.ps1', 'scripts/setup-inno.ps1') }}
+          save-always: true
 
       - name: Cache pinned driver sources and compiled objects
         uses: actions/cache@caa296126883cff596d87d8935842f9db880ef25 # v5
@@ -50,6 +51,7 @@ jobs:
             local/device-db-sources
             local/native-objects
           key: windows-driver-build-${{ hashFiles('device-db/core/**', 'device-db/tools/build*', 'device-db/tools/fetch.ps1', 'native/**', 'scripts/build-native.ps1', 'scripts/setup-native-toolchain.ps1') }}
+          save-always: true
 
       - name: Build app and run native regression tests
         run: ./scripts/build.ps1

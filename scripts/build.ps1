@@ -6,6 +6,9 @@ Push-Location -LiteralPath $repo
 try{
     & (Join-Path $PSScriptRoot 'setup-native-toolchain.ps1') | Out-Null
     & (Join-Path $repo 'device-db\tools\fetch.ps1') -Core | Out-Null
+    # The catalog provenance test and corresponding-source package use this snapshot.
+    # Do not fetch the separate, unlicensed research-only source cache.
+    & (Join-Path $repo 'device-db\tools\fetch.ps1') -SourceId openrgb | Out-Null
     node (Join-Path $repo 'device-db\tools\build-core.mjs')
     if($LASTEXITCODE -ne 0){throw 'Native driver core build failed.'}
     node (Join-Path $repo 'device-db/tools/index-core.mjs')

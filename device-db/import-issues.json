@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "issues": [],
+  "unresolved": [
+    {
+      "id": "openrgb:552417191e9089d1cff7ca9a",
+      "name": "QMK OpenRGB (user-configured IDs)",
+      "source": {
+        "source": "openrgb",
+        "revision": "f81fd32259fdd1cdcf506c9797c4be3730dfa0b3",
+        "file": "Controllers/QMKController/QMKOpenRGBController/QMKOpenRGBControllerDetect.cpp",
+        "line": 172,
+        "sha256": "f0612c373dce97f6d9b1dc322e11eb123e00653b8e5b0f97c04f7db7d5ddfe0d",
+        "url": "https://codeberg.org/OpenRGB/OpenRGB/src/commit/f81fd32259fdd1cdcf506c9797c4be3730dfa0b3/Controllers/QMKController/QMKOpenRGBController/QMKOpenRGBControllerDetect.cpp#L172"
+      },
+      "expressions": [
+        {
+          "field": "vid",
+          "expression": "usb_vid"
+        },
+        {
+          "field": "pid",
+          "expression": "usb_pid"
+        }
+      ]
+    },
+    {
+      "id": "openrgb:b088078bf1edfb45022c187c",
+      "name": "QMK VialRGB (user-configured IDs)",
+      "source": {
+        "source": "openrgb",
+        "revision": "f81fd32259fdd1cdcf506c9797c4be3730dfa0b3",
+        "file": "Controllers/QMKController/QMKVialRGBController/QMKVialRGBControllerDetect.cpp",
+        "line": 85,
+        "sha256": "e786262fd4ab6d815d0e4c4b0053a0548d6fd91f886f53803d67c4bd3ce5ac60",
+        "url": "https://codeberg.org/OpenRGB/OpenRGB/src/commit/f81fd32259fdd1cdcf506c9797c4be3730dfa0b3/Controllers/QMKController/QMKVialRGBController/QMKVialRGBControllerDetect.cpp#L85"
+      },
+      "expressions": [
+        {
+          "field": "vid",
+          "expression": "usb_vid"
+        },
+        {
+          "field": "pid",
+          "expression": "usb_pid"
+        }
+      ]
+    }
+  ]
+}

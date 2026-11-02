@@ -1,0 +1,33 @@
+{
+  "SourceRevision": "52a7e536dff3e53c96917a28caac5e0fa6510696",
+  "SourceArchiveSHA256": "c0d555c6c9c6f3803edf28f5947aaec82b0e240dff94dd3313fa863d5a67d8af",
+  "OfficialRelease": "0.2.11",
+  "BinaryReleaseSHA256": "43608cb89bc84247fef1368a139013f7d043e17db6d6c8dfc9b46bf0905a81f4",
+  "Modules": [
+    {
+      "File": "LedsValve.bin",
+      "SHA256": "1c1809281ae6f3e3c5b362f1536c0e6706013e6e33bfba66cad74636e61436d6"
+    },
+    {
+      "File": "LpcIO.bin",
+      "SHA256": "b3896a1cab0d808fca31fe2ebcae045d59dac690da87b17c858bb8da357eb45e"
+    },
+    {
+      "File": "SmbusI801.bin",
+      "SHA256": "a0f7d066e7efda28c0e754c1f52dbd8dc280d388ba8575b514a80cb67490530c"
+    },
+    {
+      "File": "SmbusIntelSkylakeIMC.bin",
+      "SHA256": "2e2d6c1e541fdfe598aa8df4d334e11c491c8a84f23e8256dd18119dd420dbd2"
+    },
+    {
+      "File": "SmbusNCT6793.bin",
+      "SHA256": "db068c6a87c0066ebfb7f691d88422fee8af350898e7a7f0db100fd6632bab17"
+    },
+    {
+      "File": "SmbusPIIX4.bin",
+      "SHA256": "91f9b4b1c39e3d399ce48477a89d8f6bd3e58a2241064a4daec3a1513dff56e5"
+    }
+  ],
+  "VerifiedAgainstOfficialRelease": true
+}

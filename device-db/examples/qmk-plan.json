@@ -1,0 +1,6 @@
+{
+  "adapter": "qmk-openrgb",
+  "revision": 13,
+  "indices": [0, 1, 2],
+  "colors": [[64, 0, 0], [0, 64, 0], [0, 0, 64]]
+}

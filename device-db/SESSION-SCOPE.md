@@ -1,0 +1,4 @@
+# Session scope — native device database
+This session owns device-db/** and local/device-db-sources/** only. The other session is fixing color changes in the existing application. Do not rebuild, install, restart, or modify that application from this session. Independent native tooling outputs go to artifacts/device-db/.
+Additional owned outputs: artifacts/device-db-core/** and device-db portable packages. Source caches stay in local/device-db-sources/**. The main application remains outside this session's edit scope.
+Updated user authorization: the other session has finished; this session now owns integration into native/include, native/src, native/tests, build/install/package scripts and documentation. Driver-core is integrated into Very Light RGB 1.1.0 and installed. See docs/native-driver-integration-v1.1.md for current verification; the earlier isolation note above records the original phase only.

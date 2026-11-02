@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "records": 2204,
+  "distinctNames": 1968,
+  "families": 198,
+  "sourceFiles": 1702,
+  "exactUpstreamSignatures": 2131,
+  "entriesWithUnresolvedExpressions": 2,
+  "transport": {
+    "custom": 44,
+    "hid": 1221,
+    "i2c-pci": 913,
+    "serial": 7,
+    "smbus": 9,
+    "smbus-dram": 10
+  },
+  "sources": {
+    "openrgb": 2204
+  },
+  "statuses": {
+    "native-experimental": 8,
+    "protocol-source": 2196
+  },
+  "constants": 15566,
+  "ioSites": 1869,
+  "ledLayouts": 0,
+  "executableStandaloneAdapters": [
+    "corsair-lighting-node (7 USB IDs)",
+    "qmk-openrgb (firmware revisions 9/B/C/D; handshake required)"
+  ],
+  "nativeAdaptersInMainApplication": [
+    "MSI MAG B850M MORTAR WIFI (MS-7E61)",
+    "Gainward RTX 5080 Phoenix"
+  ],
+  "note": "Records are upstream detector registrations or plugins, not a count of hardware-verified native devices. No upstream code was executed."
+}

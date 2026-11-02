@@ -1,0 +1,22 @@
+**/bin/
+**/obj/
+artifacts/
+local/
+.vs/
+third_party/openrgb/runtime/
+third_party/openrgb/dist/
+device-db/upstream/
+
+# Local credentials, signing keys, and diagnostics are never public source.
+.env
+.env.*
+!.env.example
+*.pfx
+*.p12
+*.key
+*.pem
+*.kdbx
+*.log
+*.pdb
+settings.json
+startup-registration.json

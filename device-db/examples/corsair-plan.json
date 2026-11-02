@@ -1,0 +1,6 @@
+{
+  "adapter": "corsair-lighting-node",
+  "pid": 3083,
+  "channel": 0,
+  "colors": [[64, 0, 0], [0, 64, 0], [0, 0, 64]]
+}

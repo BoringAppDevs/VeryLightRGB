@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+  <title>Very Light RGB — purple V</title>
+  <defs>
+    <linearGradient id="purple" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#D69CFF"/>
+      <stop offset="1" stop-color="#7628BC"/>
+    </linearGradient>
+  </defs>
+  <polygon points="26,30 105,30 105,52 89,52 128,161 167,52 151,52 151,30 230,30 230,52 215,52 150,226 106,226 41,52 26,52" fill="#20132E" stroke="#20132E" stroke-width="20" stroke-linejoin="round"/>
+  <polygon points="26,30 105,30 105,52 89,52 128,161 167,52 151,52 151,30 230,30 230,52 215,52 150,226 106,226 41,52 26,52" fill="#F7EEFF" stroke="#F7EEFF" stroke-width="12" stroke-linejoin="round"/>
+  <polygon points="26,30 105,30 105,52 89,52 128,161 167,52 151,52 151,30 230,30 230,52 215,52 150,226 106,226 41,52 26,52" fill="url(#purple)" stroke="#352046" stroke-width="4" stroke-linejoin="round"/>
+  <polygon points="32,35 99,35 99,43 78,43 127,181 116,209 58,47 32,47" fill="#EDD3FF" opacity="0.45"/>
+  <polygon points="178,56 207,56 145,219 128,219" fill="#572088" opacity="0.55"/>
+</svg>

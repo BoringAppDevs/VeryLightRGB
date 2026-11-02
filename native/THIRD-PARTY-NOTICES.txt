@@ -1,0 +1,38 @@
+Very Light RGB 1.2.0
+Original project work: GPL-3.0-or-later. Full text: LICENSE.
+Corresponding application source and build scripts: SOURCE.zip.
+License boundaries and third-party exceptions: COPYRIGHT.md.
+Version 1.1 adds a separate, GPL-licensed native driver-core worker using local
+stdio pipes. It does not start an OpenRGB SDK server and is not linked into
+the main tray EXE. Original source archives, build bridge and dependency
+notices are shipped in native-drivers/sources and native-drivers/licenses.
+All transport DLLs are built from pinned source; no separate MSVC runtime is required.
+
+nlohmann/json 3.12.0 (single-header JSON library)
+Copyright (c) 2013-2025 Niels Lohmann
+License: MIT. Full text: json.LICENSE.MIT.
+Source: https://github.com/nlohmann/json/tree/v3.12.0
+Header SHA-256: aaf127c04cb31c406e5b04a63f1ae89369fccde6d8fa7cdda1ed4f32dfc5de63
+
+Built using LLVM-MinGW 20261020, x86-64 UCRT.
+C++ runtime / compiler support license: Apache-2.0 with LLVM exceptions.
+Full toolchain distribution license: LLVM-RUNTIME-LICENSE.txt.
+Source: https://github.com/mstorsjo/llvm-mingw
+
+Native RGB transports were implemented from the project's previously
+verified MSI HID and Gainward NVAPI protocols. OpenRGB SDK interoperability
+uses an independently implemented loopback TCP client, protocol version 3.
+The stock OpenRGB GUI/SDK application is not linked into this EXE.
+Version 1.1 includes a separate server-free driver core derived from OpenRGB;
+its source archives and notices are shipped in native-drivers/.
+An optional separate with-OpenRGB distribution includes the unmodified
+OpenRGB 1.1 portable and source archives. Its GPL license, Qt license texts,
+version manifest and notices are in third_party/openrgb/.
+Protocol documentation:
+https://gitlab.com/CalcProgrammer1/OpenRGB/-/blob/master/Documentation/OpenRGBSDK.md
+
+The generated installer/uninstaller uses the unmodified Inno Setup 7.1.1 engine.
+Copyright (C) 1997-2026 Jordan Russell.
+Portions Copyright (C) 2000-2026 Martijn Laan.
+https://jrsoftware.org/
+License text: installer/INNO-SETUP-LICENSE.txt inside SOURCE.zip.

@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{4F5F63F1-FF2C-4B4E-A787-9A43F25BB0EB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RgbTray", "src\RgbTray\RgbTray.csproj", "{FAF33968-FF3C-4C58-81D9-1C539BD38A2D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{E223C8A2-C14B-4AC1-A5DE-13BBBB3F58DF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RgbTray.Tests", "tests\RgbTray.Tests\RgbTray.Tests.csproj", "{BC396BB9-22FC-4D7F-9ADA-A679D9E2D3FB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FAF33968-FF3C-4C58-81D9-1C539BD38A2D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FAF33968-FF3C-4C58-81D9-1C539BD38A2D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FAF33968-FF3C-4C58-81D9-1C539BD38A2D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FAF33968-FF3C-4C58-81D9-1C539BD38A2D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BC396BB9-22FC-4D7F-9ADA-A679D9E2D3FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC396BB9-22FC-4D7F-9ADA-A679D9E2D3FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC396BB9-22FC-4D7F-9ADA-A679D9E2D3FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC396BB9-22FC-4D7F-9ADA-A679D9E2D3FB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{FAF33968-FF3C-4C58-81D9-1C539BD38A2D} = {4F5F63F1-FF2C-4B4E-A787-9A43F25BB0EB}
+		{BC396BB9-22FC-4D7F-9ADA-A679D9E2D3FB} = {E223C8A2-C14B-4AC1-A5DE-13BBBB3F58DF}
+	EndGlobalSection
+EndGlobal

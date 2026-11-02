@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "sources": [
+    {
+      "id": "headless",
+      "revision": "cc71485c803842f065353e65426e3a28dca1e6f3",
+      "repository": "https://github.com/hello-nexus/openrgb-headless",
+      "archiveUrl": "https://codeload.github.com/hello-nexus/openrgb-headless/tar.gz/cc71485c803842f065353e65426e3a28dca1e6f3",
+      "archiveSha256": "1fe75c15af1b8309d08520438a8f40e1ceec7083bafbebc844d1689778e27e76",
+      "license": "GPL-2.0-or-later",
+      "vendoredArchive": "device-db/upstream/headless-cc71485c-source.tar.gz",
+      "cacheDirectory": "local/device-db-sources/headless"
+    },
+    {
+      "id": "mbedtls",
+      "revision": "v3.2.1",
+      "repository": "https://github.com/Mbed-TLS/mbedtls",
+      "archiveUrl": "https://codeload.github.com/Mbed-TLS/mbedtls/tar.gz/refs/tags/v3.2.1",
+      "archiveSha256": "d0e77a020f69ad558efc660d3106481b75bd3056d6301c31564e04a0faae88cc",
+      "license": "Apache-2.0",
+      "vendoredArchive": "device-db/upstream/mbedtls-3.2.1-source.tar.gz",
+      "cacheDirectory": "local/device-db-sources/mbedtls"
+    },
+    {
+      "repository": "https://github.com/OpenRGBDevelopers/hidapi-hotplug",
+      "archiveUrl": "https://codeload.github.com/OpenRGBDevelopers/hidapi-hotplug/tar.gz/238df449ecc0a56a70a3c8f4ebf46bb46857af27",
+      "vendoredArchive": "device-db/upstream/hidapi-hotplug-source.tar.gz",
+      "archiveSha256": "a78c91e750a497e2603411287c487bd990e4da8ddefa345f2b885d56bba7ced9",
+      "revision": "238df449ecc0a56a70a3c8f4ebf46bb46857af27",
+      "license": "BSD-3-Clause OR GPL-3.0 OR LicenseRef-HIDAPI",
+      "id": "hidapi-hotplug",
+      "cacheDirectory": "local/device-db-sources/hidapi-hotplug"
+    },
+    {
+      "vendoredArchive": "device-db/upstream/libusb-source.tar.gz",
+      "license": "LGPL-2.1-or-later",
+      "excludeArchiveEntries": [
+        "*/README.md"
+      ],
+      "archiveUrl": "https://codeload.github.com/libusb/libusb/tar.gz/v1.0.27",
+      "cacheDirectory": "local/device-db-sources/libusb",
+      "revision": "v1.0.27",
+      "id": "libusb",
+      "archiveSha256": "e8f18a7a36ecbb11fb820bd71540350d8f61bcd9db0d2e8c18a6fb80b214a3de",
+      "repository": "https://github.com/libusb/libusb"
+    },
+    {
+      "repository": "https://github.com/namazso/PawnIO",
+      "archiveUrl": "https://codeload.github.com/namazso/PawnIO/tar.gz/9d52965895588b0ffa3703b72eec75ba19f4ccc0",
+      "vendoredArchive": "device-db/upstream/pawnio-source.tar.gz",
+      "archiveSha256": "f3e51e415fb00b8a84dbdb4e89c1c85100a9608e0c581a3fd00889dd19b4a7ce",
+      "revision": "9d52965895588b0ffa3703b72eec75ba19f4ccc0",
+      "license": "LGPL-2.1-or-later (PawnIOLib); GPL-2.0-or-later with upstream exception (driver, not installed)",
+      "id": "pawnio",
+      "cacheDirectory": "local/device-db-sources/pawnio"
+    },
+    {
+      "repository": "https://github.com/namazso/PawnIO.Modules",
+      "archiveUrl": "https://codeload.github.com/namazso/PawnIO.Modules/tar.gz/52a7e536dff3e53c96917a28caac5e0fa6510696",
+      "vendoredArchive": "device-db/upstream/pawnio-modules-source.tar.gz",
+      "archiveSha256": "c0d555c6c9c6f3803edf28f5947aaec82b0e240dff94dd3313fa863d5a67d8af",
+      "revision": "52a7e536dff3e53c96917a28caac5e0fa6510696",
+      "license": "LGPL-2.1-or-later",
+      "id": "pawnio-modules",
+      "cacheDirectory": "local/device-db-sources/pawnio-modules"
+    }
+  ]
+}

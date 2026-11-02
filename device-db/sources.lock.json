@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "sources": [
+    {
+      "id": "openrgb",
+      "revision": "f81fd32259fdd1cdcf506c9797c4be3730dfa0b3",
+      "repository": "https://codeberg.org/OpenRGB/OpenRGB",
+      "archiveUrl": "https://codeberg.org/OpenRGB/OpenRGB/archive/f81fd32259fdd1cdcf506c9797c4be3730dfa0b3.tar.gz",
+      "archiveSha256": "70a609cd242e6f2085f0b8c8ce0f75a0195e208c4431df5aa79282f02f185b4e",
+      "vendoredArchive": "device-db/upstream/openrgb-f81fd322-source.tar.gz",
+      "license": "GPL-2.0-or-later",
+      "cacheDirectory": "local/device-db-sources/openrgb"
+    },
+    {
+      "id": "signalrgb",
+      "revision": "2343f7f7c305d592132a380a7ecc6821154a26c2",
+      "branch": "Development",
+      "repository": "https://gitlab.com/signalrgb/signal-plugins",
+      "archiveUrl": "https://gitlab.com/api/v4/projects/signalrgb%2Fsignal-plugins/repository/archive.tar.gz?sha=2343f7f7c305d592132a380a7ecc6821154a26c2",
+      "archiveSha256": "c198703d803989c1123193c921cbf56a83a483213137678a3da189afe158a74a",
+      "license": "No repository-wide license found in this snapshot; retain per-file notices; source cache is research input, not application runtime.",
+      "cacheDirectory": "local/device-db-sources/signalrgb"
+    }
+  ]
+}

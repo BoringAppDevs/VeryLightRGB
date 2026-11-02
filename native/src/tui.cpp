@@ -244,7 +244,7 @@ bool MenuNavigation::back() {
 
 std::wstring colorMenuText(const std::wstring &text, bool selected, const std::wstring &selectedStyle,
                            size_t width) {
-    constexpr std::wstring_view swatch = L"  ▕████████▏";
+    constexpr std::wstring_view swatch = L"   ████████ ";
     auto colorAt = [](std::wstring_view value, size_t at) -> std::optional<Rgb> {
         if (value[at] != L'#' || at + 7 > value.size() || (at + 7 < value.size() && iswxdigit(value[at + 7])))
             return {};
@@ -282,7 +282,7 @@ std::wstring colorMenuText(const std::wstring &text, bool selected, const std::w
                    std::to_wstring(rgb[2]) + L"m" + decorated.substr(i, 7) + normal;
             i += 6;
             if (decorated.compare(i + 1, swatch.size(), swatch) == 0) {
-                out += L"  ▕" + background(rgb) + L"        " + normal + L"▏";
+                out += L"   " + background(rgb) + L"        " + normal + L" ";
                 i += swatch.size();
             }
             continue;
@@ -662,8 +662,8 @@ class Console {
                             WORD cells[8]{};
                             COORD swatchPosition{SHORT(x + 10), y};
                             bool swatch =
-                                x + 19 <= row.size() && row.substr(x + 7, 3) == L"  ▕" &&
-                                row.substr(x + 10, 8) == L"        " && row[x + 18] == L'▏' &&
+                                x + 19 <= row.size() && row.substr(x + 7, 3) == L"   " &&
+                                row.substr(x + 10, 8) == L"        " && row[x + 18] == L' ' &&
                                 ReadConsoleOutputAttribute(output, cells, 8, swatchPosition, &read) &&
                                 read == 8 && std::all_of(std::begin(cells), std::end(cells), [&](WORD cell) {
                                     return (cell & 0xF0) == ((attribute & 0x0F) << 4);

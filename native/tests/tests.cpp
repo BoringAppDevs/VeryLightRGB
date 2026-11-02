@@ -582,8 +582,8 @@ static void menus() {
     check(colorMenuText(L"#000000").find(L"\x1b[48;2;224;228;235m") != std::wstring::npos,
           "Black HEX text has no readable background");
     check(colorMenuText(L"HEX #RRGGBB") == L"HEX #RRGGBB", "HEX placeholder was colorized");
-    check(colorMenuText(L"#000000").find(L"▕\x1b[48;2;0;0;0m        \x1b[0m▏") != std::wstring::npos,
-          "Black swatch is not shown at its actual color with a visible border");
+    check(colorMenuText(L"#000000").find(L"   \x1b[48;2;0;0;0m        \x1b[0m ") != std::wstring::npos,
+          "Black swatch is not shown at its actual color with plain spacing");
     auto plain = [](const std::wstring &styled) {
         std::wstring result;
         for (size_t i = 0; i < styled.size(); i++) {

@@ -24,7 +24,7 @@ for (const file of files) {
     continue;
   }
   const bytes = all ? fs.readFileSync(file) : git(['show', ':' + file]);
-  if (/^native\/assets\/(?:app-icon\.png|app\.ico)$/.test(file) || file === 'docs/images/main-menu.jpg') continue;
+  if (/^native\/assets\/(?:app-icon\.png|app\.ico)$/.test(file) || file === 'docs/images/main-menu.png') continue;
   if (bytes.includes(0)) {
     findings.push({ file, reason: 'unexpected binary file' });
     continue;

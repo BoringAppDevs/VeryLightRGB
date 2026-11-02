@@ -1,14 +1,14 @@
 <div align="center">
   <img src="native/assets/app-icon.png" width="80" alt="Very Light RGB logo">
   <h1>Very Light RGB</h1>
-  <p><strong>Simple RGB control. A tiny background footprint.</strong></p>
-  <p>A free, open-source lighting app for Windows that lives in your system tray.</p>
+  <p><strong>Your lighting. Your way. A lighter Windows tray.</strong></p>
+  <p>Make your setup yours with a free, open-source RGB app built to stay small.</p>
   <p>
     <a href="https://github.com/BoringAppDevs/VeryLightRGB/releases/latest/download/VeryLightRGB-Setup-win-x64.exe"><strong>Download for Windows x64</strong></a>
     &nbsp; · &nbsp;
-    <a href="https://github.com/BoringAppDevs/VeryLightRGB/releases/latest">All downloads</a>
+    <a href="https://github.com/BoringAppDevs/VeryLightRGB/releases/latest">Portable &amp; other downloads</a>
     &nbsp; · &nbsp;
-    <a href="https://github.com/BoringAppDevs/VeryLightRGB/issues">Report a problem</a>
+    <a href="https://github.com/BoringAppDevs/VeryLightRGB/issues">Feedback &amp; device requests</a>
   </p>
   <p>
     <a href="https://github.com/BoringAppDevs/VeryLightRGB/actions/workflows/release.yml"><img src="https://github.com/BoringAppDevs/VeryLightRGB/actions/workflows/release.yml/badge.svg" alt="Windows build"></a>
@@ -17,84 +17,79 @@
   </p>
 </div>
 
-Pick your devices, choose a color or an effect, and get back to what you were doing. Very Light RGB keeps your lighting running in the background; its keyboard-friendly menu opens when you need it.
+**Nine built-in effects. 2,000+ device detection entries. Just 14.8 MiB of background RAM in our Native mode benchmark.**
 
-![The English Very Light RGB menu with its rainbow accent](docs/images/main-menu.jpg)
+Pick your devices, choose your colors, and let your setup shine. Very Light RGB puts everyday lighting controls in a compact, keyboard-friendly menu, then slips back into your system tray. No account. No cloud. No subscription.
 
-## Get started
+![Very Light RGB's compact English lighting menu](docs/images/main-menu.png)
 
-1. **[Download the installer](https://github.com/BoringAppDevs/VeryLightRGB/releases/latest/download/VeryLightRGB-Setup-win-x64.exe)** and run it. Choose English or Ukrainian, and optionally enable startup with Windows.
-2. Launch **Very Light RGB** from the Start menu or double-click its tray icon.
-3. Open **Devices**, select the outputs you want to manage, then open **Lighting** to make them yours.
+## Why Very Light RGB?
 
-Press **Q** to hide the menu while your lights keep running. To stop the app, choose **Exit** from the tray menu.
+- **Keep your resources for what you love.** Native C++ and Win32 keep the app compact. In our measured workload, Native mode used about one-third of the RAM of running the same app through an OpenRGB SDK server.
+- **Get effects out of the box.** Choose Solid color, Sequential fill, Orbiting dark block, Breathing, Rainbow ("Gay" in the menu), Two-color fade, Comet, Wave, or Twinkle. No effects plugin to install.
+- **Make every output your own.** Set colors, brightness, and effects together or independently. Match your fans to your GPU, or give each its own look.
+- **Dial in the details.** Pick from 32 colors or enter a HEX value. Adjust brightness from 0–100%, including Rainbow. Tune speed, direction, and a second color where the effect supports them.
+- **Set it once. Enjoy it every day.** Settings save automatically. Optional Windows startup, reconnect handling, and crash recovery help keep your lighting ready.
+- **Stay in control.** Lighting works offline. The installer includes the app and native drivers, with no separate OpenRGB installation, Node.js, or .NET runtime needed for Native Auto mode.
 
-**Requirements:** Windows 10 or 11, x64, and compatible RGB hardware. The installer includes the app and its native drivers; you do not need Node.js, a .NET runtime, or a separate OpenRGB installation to use Native Auto mode. A [portable ZIP](https://github.com/BoringAppDevs/VeryLightRGB/releases/latest/download/VeryLightRGB-win-x64.zip) is available too—keep the included `native-drivers` folder beside the EXE.
+## Up and glowing in minutes
 
-## Make your lighting yours
+1. **[Download the Windows installer](https://github.com/BoringAppDevs/VeryLightRGB/releases/latest/download/VeryLightRGB-Setup-win-x64.exe).** Choose English or Ukrainian and optionally enable startup with Windows. Leave **Launch Very Light RGB** checked to start right away.
+2. Open **Devices** and select the outputs you want to control.
+3. Open **Lighting**, find your favorite look, and press **Q** to hide the menu. Your lights keep running.
 
-- **Control outputs together or independently.** Give your fans and GPU different colors, brightness levels, and effects.
-- **Choose from nine effects:** Solid color, Sequential fill, Orbiting dark block, Breathing, Rainbow ("Gay" in the menu), Two-color fade, Comet, Wave, and Twinkle.
-- **Fine-tune the look.** Pick from a 32-color palette or enter a HEX color. Adjust brightness from 0–100% in 5% steps, including the rainbow effect. Applicable effects also expose speed, direction, and a second color.
-- **Set the right LED count.** Supported native ARGB headers allow manual lengths of 1–120 LEDs.
-- **Set it and leave it.** Settings save automatically. Optional Windows startup, reconnect handling, and crash recovery keep setup simple.
-- **Work offline.** No account or cloud service is needed for lighting control.
+Reopen the menu from the tray icon whenever you want a change. Prefer a portable app? [Download the ZIP](https://github.com/BoringAppDevs/VeryLightRGB/releases/latest/download/VeryLightRGB-win-x64.zip), extract it, and keep the included `native-drivers` folder beside the EXE.
 
-The app uses native C++ and Win32. A static color does not need a frame-rendering loop. Additional supported devices use a separate native driver worker only while those outputs are selected.
+**Requirements:** Windows 10 or 11, x64, and compatible RGB hardware.
 
 ## Hardware compatibility
 
-Physically tested hardware includes:
+**A broad device catalog, built in.** Very Light RGB includes **2,204 catalog entries across 198 controller families**, backed by an OpenRGB-derived native driver core with **2,144 compiled detector registrations**. Explore lighting across motherboards, graphics cards, keyboards, mice, and RGB controllers from one app.
 
-| Device | Tested control |
-| --- | --- |
-| MSI MAG B850M MORTAR WIFI | Native ARGB headers |
-| Gainward RTX 5080 Phoenix | Native GPU lighting zone |
-| Razer Basilisk V3 Pro Wireless | Scroll wheel, logo, and LED strip through the native driver core |
+Open **Devices** to discover your setup and choose what to control. For supported ARGB headers, you can set the strip length manually from **1–120 LEDs**.
 
-The included OpenRGB-derived driver core contains a much broader detector catalog. **A listed detector is not a guarantee that every model, connection mode, or firmware has been tested.** Check your device in the app, and [open an issue](https://github.com/BoringAppDevs/VeryLightRGB/issues) if it needs investigation. Device names alone do not establish protocol compatibility.
+Compatibility depends on the model, firmware, and connection mode; catalog entries are detection rules, not a count of individually verified devices. Missing a device or seeing unexpected behavior? **[Open a compatibility issue](https://github.com/BoringAppDevs/VeryLightRGB/issues)** with its model and connection type to help improve support. Use one lighting app per device at a time.
 
-Let one lighting app manage each device at a time. For ordinary ARGB headers, select the connected header and set its LED count manually; the cable does not report the physical number of LEDs.
+## Less overhead. More room for everything else.
 
-## How light is it?
+In our Windows benchmark, Native mode averaged **14.8 MiB of RAM** and **0.013% CPU** while running an ARGB animation alongside a static GPU color, with the menu closed.
 
-In a 60-second Windows test with a 12-LED fan animation and a static GPU color, the native background process averaged **14.8 MiB of RAM** with its menu closed.
-
-| Measured configuration | Mean working set | CPU, whole machine |
+| Same lighting workload | Average RAM | Average CPU |
 | --- | ---: | ---: |
-| Very Light RGB, native MSI/Gainward control | **14.8 MiB** | **0.013%** |
-| Very Light RGB through OpenRGB SDK, both processes combined | **44.5 MiB** | **0.058%** |
+| **Very Light RGB · Native mode** | **14.8 MiB** | **0.013%** |
+| Very Light RGB + OpenRGB SDK server | 44.5 MiB | 0.058% |
+| **Native mode advantage in this test** | **About 67% less RAM** | **About 78% less CPU time** |
 
-These are measurements from one Windows 11 PC with 16 logical processors, not fixed requirements or a claim about every RGB application. The SDK result includes a **13.8 MiB** Very Light RGB process and a **30.7 MiB** OpenRGB 1.1 CLI server. It does **not** measure OpenRGB's desktop UI or Effects Plugin. Selecting additional native-driver devices adds their worker's resource usage.
+Native mode lets supported devices run directly, without a separate SDK server. Additional devices use the bundled native driver worker when needed.
 
-See the [benchmark method and anonymized results](docs/benchmarks/README.md) for workload, sampling, and limitations.
+*Measured for 60 seconds on Windows 11 with 16 logical processors. RAM is mean working set; CPU is the share of the whole machine. The SDK total includes the app and OpenRGB 1.1 CLI server. Results depend on hardware and selected devices; the Native run did not need the extra driver worker. This is a comparison of this app's two connection modes, not a benchmark of OpenRGB's desktop UI. [Method and results](docs/benchmarks/README.md).*
 
-## Very Light RGB or OpenRGB?
+## An easy way to enjoy the OpenRGB ecosystem
 
-Both are free and open source. Very Light RGB focuses on a small Windows tray app with straightforward lighting controls. [OpenRGB](https://openrgb.org/) offers a broader cross-platform toolkit and plugin ecosystem.
+[OpenRGB](https://openrgb.org/) provides the open-source driver foundation behind much of our device coverage. Very Light RGB brings that work into a focused Windows experience:
 
-| | Very Light RGB | OpenRGB |
-| --- | --- | --- |
-| Interface | Tray icon and an on-demand text menu | Desktop UI and command line |
-| Platforms | Windows x64 | Windows, Linux, and macOS |
-| Software effects | Nine built-in effects | [Effects Plugin](https://openrgb.org/plugin_effects.html), including audio and screen-driven effects |
-| Connections | Native Auto by default; optional OpenRGB SDK mode | Native device support, network SDK, and plugins |
-| Best fit | Simple lighting with a small background process | Broader integrations and advanced customization |
+| What you want | What Very Light RGB gives you |
+| --- | --- |
+| Install and start changing your lights | One Windows installer with native drivers included |
+| Animated lighting without extra setup | Nine effects built into the app |
+| A small app you can leave running | Tray controls, an on-demand menu, and direct Native mode |
+| Different looks across your setup | Independent colors, brightness, and effects per output |
+| Keep your existing OpenRGB setup | Optional SDK mode connects to your OpenRGB server |
 
-You can also use Very Light RGB as a compact front end to an existing OpenRGB SDK server. The resource table above compares those two ways of running **this app**, rather than ranking every feature of the two projects.
+Already use OpenRGB? Keep your existing server and try Very Light RGB as a compact lighting front end. Starting fresh? Native Auto mode is ready out of the box.
 
-## Downloads and updates
+## Download once. Keep it fresh.
 
-**[GitHub Releases](https://github.com/BoringAppDevs/VeryLightRGB/releases/latest)** contains the Windows installer, portable app, corresponding source archive, and `SHA256SUMS.txt`. Install a newer build over the existing app to keep your settings. Uninstalling leaves your settings available for a later installation.
+**[Get the latest release](https://github.com/BoringAppDevs/VeryLightRGB/releases/latest)** for the Windows installer, portable ZIP, source archive, and SHA-256 checksums. Install a newer build over the existing app to keep your settings.
 
-Builds are produced automatically from `main` after source checks, compilation, tests, and release-file checks. The installer is currently unsigned; checksums are included with each release.
+Every push to `main` automatically builds and tests the app, then publishes the downloads to GitHub Releases. The installer is currently unsigned; `SHA256SUMS.txt` is included with each release.
 
-## Contributing
+## Help make it better
 
-Bug reports, compatibility reports, and small improvements are welcome. For a hardware report, include the model, connection mode, and what happened; remove serial numbers, personal paths, and other private information from diagnostics.
+Found a bug, have an effect idea, or want to help a device work better? **[We'd love your feedback](https://github.com/BoringAppDevs/VeryLightRGB/issues).** Include the device model, connection mode, and what happened. Remove serial numbers and personal information from any diagnostics you share.
 
-Want to build it yourself? See [Building and releases](docs/BUILDING.md). Most users can simply download the installer above.
+Code contributions are welcome too. See [Building and releases](docs/BUILDING.md) to get started.
 
-## License and acknowledgments
+## Open source, with thanks
 
-Very Light RGB is licensed under **[GPL-3.0-or-later](LICENSE)**. The native driver core builds on OpenRGB and its contributors' work. Third-party components retain their own licenses and notices; see [COPYRIGHT.md](COPYRIGHT.md). Corresponding source and dependency notices are included in the release packages.
+Very Light RGB is free software under **[GPL-3.0-or-later](LICENSE)**. Thanks to OpenRGB and its contributors for the driver work that helps make broad device coverage possible. Third-party components retain their own licenses; see [COPYRIGHT.md](COPYRIGHT.md). Corresponding source and dependency notices ship with the release packages.

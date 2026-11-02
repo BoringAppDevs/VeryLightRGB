@@ -5,7 +5,7 @@ Measured on November 2, 2026 using Very Light RGB 1.2.0 and the unmodified OpenR
 ## Workload and method
 
 - Windows 11 x64; 16 logical processors.
-- One MSI motherboard ARGB header, manually configured for 12 LEDs, plus one Gainward RTX 5080 Phoenix lighting zone.
+- One motherboard ARGB header, manually configured for 12 LEDs, plus one GPU lighting zone, both controlled by the app's direct native drivers.
 - ARGB: Sequential fill, white, 50% brightness, 200 ms step time, 30 FPS. GPU: static `#64E6C6` at 100% brightness.
 - The menu was closed during both runs. No additional native-driver devices were selected, so no driver-core worker was running in the native case.
 - Approximately 60 seconds per run, with working set and private commit sampled once per second. CPU is the increase in process CPU time divided by elapsed wall time and the logical-processor count.

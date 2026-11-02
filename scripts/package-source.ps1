@@ -8,8 +8,8 @@ Add-Type -AssemblyName System.IO.Compression
 $stream=[IO.File]::Open($zip,[IO.FileMode]::Create)
 $archive=[IO.Compression.ZipArchive]::new($stream,[IO.Compression.ZipArchiveMode]::Create)
 try {
-    $roots=@('native','scripts','installer','device-db','docs','src','tests')
-    $files=@('README.md','LICENSE','COPYRIGHT.md','.gitignore','Directory.Build.props','RGB.sln') | ForEach-Object {Get-Item -LiteralPath (Join-Path $repo $_)}
+    $roots=@('native','scripts','installer','device-db','docs','src','tests','.github')
+    $files=@('README.md','LICENSE','COPYRIGHT.md','.gitignore','.gitattributes','Directory.Build.props','RGB.sln') | ForEach-Object {Get-Item -LiteralPath (Join-Path $repo $_)}
     foreach($root in $roots){$files+=Get-ChildItem -LiteralPath (Join-Path $repo $root) -File -Recurse | Where-Object {$_.FullName -notmatch '[\\/](?:bin|obj)[\\/]'}}
     # SDK integration manifests are source; large optional GUI binaries are fetched separately.
     $files+=Get-ChildItem -LiteralPath (Join-Path $repo 'third_party/openrgb') -File

@@ -1,0 +1,97 @@
+name: Build and release Windows app
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: windows-release-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  release:
+    if: github.ref == 'refs/heads/main'
+    runs-on: windows-2025
+    timeout-minutes: 60
+    defaults:
+      run:
+        shell: pwsh
+    steps:
+      - name: Check out source
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+
+      - name: Set up Node.js
+        uses: actions/setup-node@249970729cb0ef3589644e2896645e5dc5ba9c38 # v6
+        with:
+          node-version: '22'
+
+      - name: Check public source for private data
+        run: node scripts/verify-public-source.mjs --all
+
+      - name: Cache verified build tools
+        uses: actions/cache@caa296126883cff596d87d8935842f9db880ef25 # v5
+        with:
+          path: |
+            local/toolchain
+            local/inno-setup
+          key: windows-build-tools-${{ hashFiles('scripts/setup-native-toolchain.ps1', 'scripts/setup-inno.ps1') }}
+
+      - name: Cache pinned driver sources and compiled objects
+        uses: actions/cache@caa296126883cff596d87d8935842f9db880ef25 # v5
+        with:
+          path: |
+            device-db/upstream
+            local/device-db-sources
+            local/native-objects
+          key: windows-driver-build-${{ hashFiles('device-db/core/**', 'device-db/tools/build*', 'device-db/tools/fetch.ps1', 'native/**', 'scripts/build-native.ps1', 'scripts/setup-native-toolchain.ps1') }}
+
+      - name: Build app and run native regression tests
+        run: ./scripts/build.ps1
+
+      - name: Test device database and driver core without hardware
+        run: node --test device-db/tests/import.test.mjs device-db/tests/core.test.mjs
+
+      - name: Build Windows installer and portable package
+        run: |
+          ./scripts/build-installer.ps1 -SkipBuild
+          ./scripts/package-native.ps1
+
+      - name: Verify and prepare release downloads
+        id: package
+        run: |
+          ./scripts/prepare-release.ps1
+          $version = (Get-Item artifacts/VeryLightRGB/VeryLightRGB.exe).VersionInfo.ProductVersion
+          "version=$version" >> $env:GITHUB_OUTPUT
+
+      - name: Publish installer, portable app, source, and checksums
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+          RELEASE_VERSION: ${{ steps.package.outputs.version }}
+          RELEASE_COMMIT: ${{ github.sha }}
+          RELEASE_BUILD: ${{ github.run_number }}.${{ github.run_attempt }}
+        run: |
+          $tag = "v$env:RELEASE_VERSION-build.$env:RELEASE_BUILD"
+          $notes = @"
+          Download **VeryLightRGB-Setup-win-x64.exe** for the standard Windows installation.
+          A portable ZIP is also available. Windows 10/11 x64; no development tools are needed.
+
+          - **SHA256SUMS.txt** contains the SHA-256 checksums for all downloads.
+          - **VeryLightRGB-source.zip** contains corresponding source and build scripts.
+          - License: GPL-3.0-or-later, with third-party notices included.
+
+          Built from commit $env:RELEASE_COMMIT by GitHub Actions.
+          "@
+          $notesPath = Join-Path $env:RUNNER_TEMP 'release-notes.md'
+          [IO.File]::WriteAllText($notesPath, $notes, [Text.UTF8Encoding]::new($false))
+          $assets = @(Get-ChildItem artifacts/release -File | ForEach-Object FullName)
+          gh release create $tag @assets --draft --target $env:RELEASE_COMMIT --title "Very Light RGB $env:RELEASE_VERSION" --notes-file $notesPath
+          if ($LASTEXITCODE -ne 0) { throw 'Release upload failed; no completed release was published.' }
+          gh release edit $tag --draft=false --latest
+          if ($LASTEXITCODE -ne 0) { throw 'Could not publish the completed release.' }

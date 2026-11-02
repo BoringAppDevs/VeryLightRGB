@@ -1,86 +1,100 @@
-# Very Light RGB 1.2.0
+<div align="center">
+  <img src="native/assets/app-icon.png" width="80" alt="Very Light RGB logo">
+  <h1>Very Light RGB</h1>
+  <p><strong>Simple RGB control. A tiny background footprint.</strong></p>
+  <p>A free, open-source lighting app for Windows that lives in your system tray.</p>
+  <p>
+    <a href="https://github.com/BoringAppDevs/VeryLightRGB/releases/latest/download/VeryLightRGB-Setup-win-x64.exe"><strong>Download for Windows x64</strong></a>
+    &nbsp; · &nbsp;
+    <a href="https://github.com/BoringAppDevs/VeryLightRGB/releases/latest">All downloads</a>
+    &nbsp; · &nbsp;
+    <a href="https://github.com/BoringAppDevs/VeryLightRGB/issues">Report a problem</a>
+  </p>
+  <p>
+    <a href="https://github.com/BoringAppDevs/VeryLightRGB/actions/workflows/release.yml"><img src="https://github.com/BoringAppDevs/VeryLightRGB/actions/workflows/release.yml/badge.svg" alt="Windows build"></a>
+    <a href="LICENSE"><img src="https://img.shields.io/badge/license-GPL--3.0--or--later-purple" alt="GPL-3.0-or-later"></a>
+    <img src="https://img.shields.io/badge/platform-Windows%2010%20%2F%2011-blue" alt="Windows 10 and 11">
+  </p>
+</div>
 
-**1.2.0:** яскравість 0–100% доступна також у «Гейському» режимі (крок 5%). Додано «Комету», двоколірну «Хвилю» та м’яке «Мерехтіння». Звичайний інсталятор повністю перекладено English / Українська, без штучних затримок.
+Pick your devices, choose a color or an effect, and get back to what you were doing. Very Light RGB keeps your lighting running in the background; its keyboard-friendly menu opens when you need it.
 
-**1.1.1:** Windows Setup.exe із видаленням через Installed apps, перевіркою комплекту драйверів та збереженням налаштувань при оновленні. Transport DLL більше не потребують окремого Visual C++ runtime. Власний код — [GPL-3.0-or-later](LICENSE); джерела входять у комплект. [Рев’ю та clean-install перевірка](docs/review-native-v1.1.1.md).
+![The English Very Light RGB menu with its rainbow accent](docs/images/main-menu.jpg)
 
-Мова інтерфейсу за замовчуванням — **English**. У головному меню **Language / Мова** можна вибрати **English** або **Українська**; вибір зберігається між запусками. Написи меню, палітри, підказки, прогрес reload і tray-меню оновлюються без перезапуску анімації.
+## Get started
 
-Маленька нативна Windows x64 програма для RGB: фоновий tray-процес і текстове меню, яке відкривається лише за потреби. Написана на C++ / Win32. .NET та OpenRGB для поточного обладнання не потрібні.
+1. **[Download the installer](https://github.com/BoringAppDevs/VeryLightRGB/releases/latest/download/VeryLightRGB-Setup-win-x64.exe)** and run it. Choose English or Ukrainian, and optionally enable startup with Windows.
+2. Launch **Very Light RGB** from the Start menu or double-click its tray icon.
+3. Open **Devices**, select the outputs you want to manage, then open **Lighting** to make them yours.
 
-**1.1.0: Native · Auto / Offline.** Reload devices тепер автоматично підключає додаткові сумісні USB/HID-контролери та GPU через включене Qt-free ядро драйверів. SDK-сервер не запускається. Нові зони працюють у звичайних меню пристроїв і підсвітки: окремі кольори, спільні/власні ефекти, яскравість, off/on та відновлення після збою worker. На цьому ПК додано **Razer Basilisk V3 Pro Wireless: Scroll Wheel, Logo, LED Strip**. MSI/Gainward використовують попередні перевірені модулі без дублювання контролерів. [Інтеграція й перевірки](docs/native-driver-integration-v1.1.md).
+Press **Q** to hide the menu while your lights keep running. To stop the app, choose **Exit** from the tray menu.
 
-**Попередній замір MSI/Gainward без додаткового worker:** анімація ARGB 1 + статична GPU, меню закрите — **14,7–14,8 МіБ RAM**, 2,6–2,7 МіБ private commit, менше **0,01% CPU всього ПК** у хвилинних замірах. Це вимірювання конкретного ПК, а не гарантований ліміт. Коли вибрані виходи нового native-ядра, його RAM/CPU додаються до tray-процесу; якщо такі виходи не вибрані, worker не залишається працювати.
+**Requirements:** Windows 10 or 11, x64, and compatible RGB hardware. The installer includes the app and its native drivers; you do not need Node.js, a .NET runtime, or a separate OpenRGB installation to use Native Auto mode. A [portable ZIP](https://github.com/BoringAppDevs/VeryLightRGB/releases/latest/download/VeryLightRGB-win-x64.zip) is available too—keep the included `native-drivers` folder beside the EXE.
 
-## Використання
+## Make your lighting yours
 
-Відкрий **Very Light RGB** у Пуск або двічі клацни іконку в tray — відкриється головне меню. `Esc` повертає до попереднього екрана зі збереженням вибору; на верхньому рівні залишається головне меню. `Q` або пункт «Згорнути в tray» закриває лише меню, підсвітка продовжує працювати. Вихід із програми — через tray → «Вийти».
+- **Control outputs together or independently.** Give your fans and GPU different colors, brightness levels, and effects.
+- **Choose from nine effects:** Solid color, Sequential fill, Orbiting dark block, Breathing, Rainbow ("Gay" in the menu), Two-color fade, Comet, Wave, and Twinkle.
+- **Fine-tune the look.** Pick from a 32-color palette or enter a HEX color. Adjust brightness from 0–100% in 5% steps, including the rainbow effect. Applicable effects also expose speed, direction, and a second color.
+- **Set the right LED count.** Supported native ARGB headers allow manual lengths of 1–120 LEDs.
+- **Set it and leave it.** Settings save automatically. Optional Windows startup, reconnect handling, and crash recovery keep setup simple.
+- **Work offline.** No account or cloud service is needed for lighting control.
 
-- `L` — підсвітка: «Усе разом» або окремий вихід, палітра / HEX, яскравість, ефект, кількість діодів. «Усе разом» змінює обраний параметр усіх керованих виходів, включно з незалежними стилями. Зміна окремого виходу автоматично створює його власний стиль. Загальне живлення вимикає також незалежні зони.
-- `D` — пристрої: `Space` позначає керовані виходи; `I` підсвічує вибраний; `1` залишає лише цей MSI ARGB-хедер, зберігаючи GPU.
-- `S` — система: backend, SDK-порт, FPS, автозапуск, перепідключення та Reload devices.
-- Стрілки вибирають рядок / змінюють значення; `Enter` відкриває розділ, список або поле вводу. `R` оновлює каталог у Devices / Пристрої та System / Система з показом прогресу; у System також є відповідна кнопка й `F5` для стану. На головному екрані лише підказки навігації. Гарячі клавіші працюють також з українською розкладкою.
+The app uses native C++ and Win32. A static color does not need a frame-rendering loop. Additional supported devices use a separate native driver worker only while those outputs are selected.
 
-Широкий жирний банер має кольоровий фон. Акцент рамок, банера й списків відповідає **основному кольору першого вибраного виходу**; якщо виходів немає — спільному основному кольору. Яскравість підсвітки й другий колір не затемнюють тему; для темних акцентів зберігається контраст тексту. На вузькому терміналі банер компактніший.
+## Hardware compatibility
 
-HEX-коди показуються власним кольором і великим зразком поруч у налаштуваннях підсвітки, палітрі та ручному вводі; темні кольори мають світлу підкладку. Палітра містить 32 іменовані кольори, включно з пастельними, теплим / холодним білим та чорним. PgUp / PgDn і Home / End допомагають переглядати список. Яскравість має бар і пресети 0–100% з кроком 5%; `← →` переходять до сусіднього пресета. Reload автоматично показує чергу, поточний етап / прогрес, кількість виходів та результат або помилку; F5 для завершення не потрібен. [Перевірки оновлення меню](docs/usability-v1.0.2.md).
+Physically tested hardware includes:
 
-Коли виходи мають різні параметри, меню показує «Різні ефекти/кольори/яскравість». Зміна спільного кольору зберігає окремі ефекти та яскравості; зміна спільного ефекту застосовує саме ефект до всіх. Виправлення випадку, коли працювало лише живлення: [перевірка 1.0.5](docs/controls-fix-v1.0.5.md).
+| Device | Tested control |
+| --- | --- |
+| MSI MAG B850M MORTAR WIFI | Native ARGB headers |
+| Gainward RTX 5080 Phoenix | Native GPU lighting zone |
+| Razer Basilisk V3 Pro Wireless | Scroll wheel, logo, and LED strip through the native driver core |
 
-Профілі відсутні. Налаштування зберігаються автоматично. У режимі «Гейській» яскравість регулюється від 0 до 100%, цикл — 12 секунд; непотрібні колір і швидкість приховані.
+The included OpenRGB-derived driver core contains a much broader detector catalog. **A listed detector is not a guarantee that every model, connection mode, or firmware has been tested.** Check your device in the app, and [open an issue](https://github.com/BoringAppDevs/VeryLightRGB/issues) if it needs investigation. Device names alone do not establish protocol compatibility.
 
-| Ефект | Поведінка |
-|---|---|
-| Сталий колір | Один апаратний запис, без циклу кадрів |
-| По черзі | Плавне заповнення, пауза, згасання діодів по одному |
-| Темний блок по колу | Плавно рухається темна ділянка; ширина початково 4 |
-| Дихання | Плавна зміна яскравості |
-| Гейській | Веселка з регульованою яскравістю, цикл 12 секунд |
-| Перехід двох кольорів | Плавне чергування двох кольорів |
-| Комета | Яскрава точка з плавним хвостом; на одній зоні — пульсація |
-| Хвиля | Рухома хвиля між двома обраними кольорами |
-| Мерехтіння | М’які незалежні спалахи діодів обраного кольору |
+Let one lighting app manage each device at a time. For ordinary ARGB headers, select the connected header and set its LED count manually; the cable does not report the physical number of LEDs.
 
-GPU має одну керовану зону: темний блок дає сталий колір, заповнення змінює яскравість цілої зони. Нативний ARGB має ручне налаштування **1–120 діодів**; довжини SDK-зон налаштовуються в OpenRGB.
+## How light is it?
 
-## Поточне обладнання та інші ПК
+In a 60-second Windows test with a 12-LED fan animation and a static GPU color, the native background process averaged **14.8 MiB of RAM** with its menu closed.
 
-Нативно підтримуються **MSI MAG B850M MORTAR WIFI (MS-7E61)** і **Gainward RTX 5080 Phoenix** за перевіреними USB / PCI ID. На цьому ПК керовані **MSI · ARGB 1** та GPU. Три паралельні вентилятори повторюють один сигнал, довжина відкалібрована на **12 діодів**. Порожні ARGB 2/3 не вибрані. Протокол звичайного ARGB не повідомляє надійно ані зайнятість кабелю, ані фізичну кількість діодів.
+| Measured configuration | Mean working set | CPU, whole machine |
+| --- | ---: | ---: |
+| Very Light RGB, native MSI/Gainward control | **14.8 MiB** | **0.013%** |
+| Very Light RGB through OpenRGB SDK, both processes combined | **44.5 MiB** | **0.058%** |
 
-Інші моделі не стають сумісними лише через зміну ID: native-ядро містить **2144 реєстрації детекторів** із реалізаціями протоколів. Публічна база ліцензованих джерел містить 2204 записи, але це не гарантія фізично перевіреної підтримки всіх моделей. Для специфічного setup є також необов’язковий [OpenRGB SDK](https://openrgb.org/sdk.html); він потребує окремого запущеного сервера. Native Auto працює без нього. Hybrid зберігає попереднє поєднання MSI/Gainward + SDK; новий driver-core використовується у Native Auto.
+These are measurements from one Windows 11 PC with 16 logical processors, not fixed requirements or a claim about every RGB application. The SDK result includes a **13.8 MiB** Very Light RGB process and a **30.7 MiB** OpenRGB 1.1 CLI server. It does **not** measure OpenRGB's desktop UI or Effects Plugin. Selecting additional native-driver devices adds their worker's resource usage.
 
-Каталог кешується. Повне оновлення виконується при першому налаштуванні, зміні backend / порту або `Reload devices`. При підключенні до SDK зіставляються поточні серверні індекси; апаратного rescan клієнт не запитує. Native + SDK дозволяє різні контролери; детектори плати та GPU, якими керує native, потрібно вимкнути в OpenRGB.
+See the [benchmark method and anonymized results](docs/benchmarks/README.md) for workload, sampling, and limitations.
 
-У Native Auto перевірено підключення трьох зон Razer Basilisk V3 Pro Wireless, off/on і відновлення worker. Інші моделі та прошивки потребують власної перевірки. Наявність VIA не гарантує потрібного RGB-протоколу або незалежного керування lightbar; сумісність підключеної клавіатури не підтверджена. Firmware не змінювалася.
+## Very Light RGB or OpenRGB?
 
-## Встановлення та розробка
+Both are free and open source. Very Light RGB focuses on a small Windows tray app with straightforward lighting controls. [OpenRGB](https://openrgb.org/) offers a broader cross-platform toolkit and plugin ecosystem.
 
-```powershell
-.\scripts\build.ps1
-.\scripts\install.ps1
-```
+| | Very Light RGB | OpenRGB |
+| --- | --- | --- |
+| Interface | Tray icon and an on-demand text menu | Desktop UI and command line |
+| Platforms | Windows x64 | Windows, Linux, and macOS |
+| Software effects | Nine built-in effects | [Effects Plugin](https://openrgb.org/plugin_effects.html), including audio and screen-driven effects |
+| Connections | Native Auto by default; optional OpenRGB SDK mode | Native device support, network SDK, and plugins |
+| Best fit | Simple lighting with a small background process | Broader integrations and advanced customization |
 
-Публічний Git-репозиторій містить код, базу пристроїв, ліцензії та manifests із закріпленими SHA-256. Перший build завантажує відсутні архіви драйверних залежностей із цих manifests. `local/`, `artifacts/`, `device-db/upstream/` і `third_party/openrgb/dist/` не публікуються в Git. Перевірка перед комітом: `node scripts/verify-public-source.mjs --staged`; перевірка всіх відстежуваних файлів: `node scripts/verify-public-source.mjs --all`.
+You can also use Very Light RGB as a compact front end to an existing OpenRGB SDK server. The resource table above compares those two ways of running **this app**, rather than ranking every feature of the two projects.
 
-Потрібна Windows 10/11 x64. Build завантажує закріплений LLVM-MinGW із перевіркою SHA-256; потрібен Node.js для збирання native-ядра, .NET SDK не потрібен. Програма встановлюється у `%LOCALAPPDATA%\Programs\VeryLightRGB`, налаштування — `%LOCALAPPDATA%\VeryLightRGB`. Setup працює для поточного користувача без адміністратора, пропонує автозапуск та ярлик. Оновлення зберігає налаштування; видалення залишає їх на диску. Інсталятор не змінює автозапуск інших RGB-програм.
+## Downloads and updates
 
-`scripts/build-installer.ps1` створює Setup.exe, corresponding source ZIP та SHA-256. `scripts/package-native.ps1` готує portable ZIP. Релізи містять повний `LICENSE`, сторонні notices і `SOURCE.zip`. Джерела для локальної перебудови драйверів закріплені за ревізіями й хешами. Деталі меж ліцензії — у [COPYRIGHT.md](COPYRIGHT.md).
+**[GitHub Releases](https://github.com/BoringAppDevs/VeryLightRGB/releases/latest)** contains the Windows installer, portable app, corresponding source archive, and `SHA256SUMS.txt`. Install a newer build over the existing app to keep your settings. Uninstalling leaves your settings available for a later installation.
 
-Автозапуск — задача поточного користувача після входу у Windows, затримка 10 секунд. Є подієве відновлення після помилки без додаткового фонового сервісу. Контрольований збій і повторний запуск зі збереженням конфігурації перевірені. Повний наступний logon / reboot і sleep/resume ще потребують фізичної перевірки.
+Builds are produced automatically from `main` after source checks, compilation, tests, and release-file checks. The installer is currently unsigned; checksums are included with each release.
 
-```powershell
-& .\artifacts\VeryLightRGB\tests.exe
-# Реальне обладнання: спочатку закрий RGB-агент та інші RGB-програми
-& .\artifacts\VeryLightRGB\tests.exe --hardware
-.\scripts\measure-resources.ps1 -Seconds 60
-```
+## Contributing
 
-[Архітектура, CLI та збірка](native/README.md) · [Код-рев’ю і перевірки](docs/review-native-v1.md) · [Архів C# версії](docs/legacy-v0.4.md). `scripts/restore-signalrgb.ps1` вимикає новий автозапуск і повертає попередню інтеграцію SignalRGB за збереженою резервною копією.
+Bug reports, compatibility reports, and small improvements are welcome. For a hardware report, include the model, connection mode, and what happened; remove serial numbers, personal paths, and other private information from diagnostics.
 
-`scripts/package-native.ps1` створює portable ZIP із EXE, короткою інструкцією та ліцензіями. Налаштування / журнали цього ПК в архів не входять.
+Want to build it yourself? See [Building and releases](docs/BUILDING.md). Most users can simply download the installer above.
 
-## OpenRGB у репозиторії
+## License and acknowledgments
 
-Для офіційного **OpenRGB 1.1 portable Windows x64** у [third_party/openrgb](third_party/openrgb/README.md) збережені manifests, ліцензії та закріплені SHA-256. `setup-openrgb.ps1` завантажує portable і відповідний source archive; `start-openrgb.ps1` та `stop-openrgb.ps1` керують локальним SDK server. `package-native.ps1 -WithOpenRgb` створює окремий комплект з OpenRGB.
-
-Перевірено на реальних MSI JARGB 1 і Gainward: фізичний readback, 24 анімаційні кадри, окремі стилі, off/on та відновлення після перезапуску сервера. Разом SDK-агент і OpenRGB використали **43,0 МіБ RAM**, приблизно **0,041% CPU всього ПК** за хвилину. Поточне обладнання залишене у легшому native-режимі. Деталі й конкретне обмеження Keychron Link: [перевірка OpenRGB](docs/openrgb-integration.md).
+Very Light RGB is licensed under **[GPL-3.0-or-later](LICENSE)**. The native driver core builds on OpenRGB and its contributors' work. Third-party components retain their own licenses and notices; see [COPYRIGHT.md](COPYRIGHT.md). Corresponding source and dependency notices are included in the release packages.

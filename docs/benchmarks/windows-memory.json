@@ -1,0 +1,43 @@
+{
+  "date": "2026-11-02",
+  "appVersion": "1.2.0",
+  "openrgbVersion": "1.1",
+  "platform": "Windows 11 x64",
+  "logicalProcessors": 16,
+  "sampleIntervalSeconds": 1,
+  "workload": {
+    "stepMilliseconds": 200,
+    "gpuBrightnessPercent": 100,
+    "gpuEffect": "Solid color",
+    "framesPerSecond": 30,
+    "gpuColor": "#64E6C6",
+    "menuOpen": false,
+    "argbBrightnessPercent": 50,
+    "argbEffect": "Sequential fill",
+    "additionalNativeWorker": false,
+    "argbLedCount": 12
+  },
+  "cases": [
+    {
+      "privateCommitMiB": 2.4,
+      "cpuPercentOfMachine": 0.013,
+      "seconds": 60.41,
+      "meanWorkingSetMiB": 14.8,
+      "name": "native"
+    },
+    {
+      "privateCommitMiB": 2.2,
+      "cpuPercentOfMachine": 0.011,
+      "seconds": 60.43,
+      "meanWorkingSetMiB": 13.8,
+      "name": "sdk-agent"
+    },
+    {
+      "privateCommitMiB": 9.5,
+      "cpuPercentOfMachine": 0.047,
+      "seconds": 60.43,
+      "meanWorkingSetMiB": 30.7,
+      "name": "openrgb-server"
+    }
+  ]
+}

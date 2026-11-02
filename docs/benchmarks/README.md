@@ -32,3 +32,5 @@ Working sets can share memory pages, so summing process working sets can count s
 The two runs used the same app-level lighting workload through different transports. This is not a measurement of standalone OpenRGB's software effects or GUI. OpenRGB is itself designed to be lightweight; its broader platform support, SDK, and plugin ecosystem serve use cases beyond this benchmark.
 
 Feature references: [OpenRGB overview](https://openrgb.org/), [OpenRGB Effects Plugin](https://openrgb.org/plugin_effects.html). No unsourced RAM numbers for other applications are included.
+
+A separate [November 2 desktop-app resource comparison](windows-apps-2026-11-02.md) records measured OpenRGB, SignalRGB, MSI Center/Mystic Light, Razer Chroma, and Very Light RGB background scenarios, disk footprints, and cleanup checks. Those workloads differ from this two-mode benchmark and from each other; use its method and limitations when quoting its figures.

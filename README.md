@@ -17,7 +17,7 @@
   </p>
 </div>
 
-**Nine built-in effects. 2,000+ device detection entries. Just 14.8 MiB of background RAM in our Native mode benchmark.**
+**Nine built-in effects. 2,000+ device detection entries. Just 3.95 MB of private RAM in our background benchmark.**
 
 Pick your devices, choose your colors, and let your setup shine. Very Light RGB puts everyday lighting controls in a compact, keyboard-friendly menu, then slips back into your system tray. No account. No cloud. No subscription.
 
@@ -25,7 +25,7 @@ Pick your devices, choose your colors, and let your setup shine. Very Light RGB 
 
 ## Why Very Light RGB?
 
-- **Keep your resources for what you love.** Native C++ and Win32 keep the app compact. In our measured workload, Native mode used about one-third of the RAM of running the same app through an OpenRGB SDK server.
+- **Keep your resources for what you love.** Native C++ and Win32 keep the app compact. In our local background test, Very Light RGB averaged 3.95 MB of private RAM while animating three ARGB outputs and a GPU.
 - **Get effects out of the box.** Choose Solid color, Sequential fill, Orbiting dark block, Breathing, Rainbow ("Gay" in the menu), Two-color fade, Comet, Wave, or Twinkle. No effects plugin to install.
 - **Make every output your own.** Set colors, brightness, and effects together or independently. Match your fans to your GPU, or give each its own look.
 - **Dial in the details.** Pick from 32 colors or enter a HEX value. Adjust brightness from 0–100%, including Rainbow. Tune speed, direction, and a second color where the effect supports them.
@@ -52,31 +52,19 @@ Compatibility depends on the model, firmware, and connection mode; catalog entri
 
 ## Less overhead. More room for everything else.
 
-In our Windows benchmark, Native mode averaged **14.8 MiB of RAM** and **0.013% CPU** while running an ARGB animation alongside a static GPU color, with the menu closed.
+In our Windows 11 background test, Very Light RGB averaged **3.95 MB of private RAM** and **0.099% CPU** while running Rainbow on three ARGB outputs and a GPU, with the menu closed.
 
-| Same lighting workload | Average RAM | Average CPU |
-| --- | ---: | ---: |
-| **Very Light RGB · Native mode** | **14.8 MiB** | **0.013%** |
-| Very Light RGB + OpenRGB SDK server | 44.5 MiB | 0.058% |
-| **Native mode advantage in this test** | **About 67% less RAM** | **About 78% less CPU time** |
+| Application | Disk usage | Private RAM | CPU | Our disk usage vs. app | Our RAM usage vs. app | Our CPU usage vs. app |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: |
+| **Very Light RGB** | **83 MB** | **3.95 MB** | **0.099%** | — | — | — |
+| OpenRGB | 51.3 MB | 36.1 MB | 0.028% | **62% more** | **9.1× less** | — |
+| SignalRGB | 1.18 GB | 679 MB | 1.092% | **14.2× less** | **172× less** | **90.9% less** |
+| MSI Center + Mystic Light | 1.92 GB | 175 MB | 0.167% | **23.2× less** | **44.2× less** | **40.5% less** |
+| Razer Chroma + shared Synapse components | ≥2.86 GB | 1.05 GB | 0.113% | **≥34.4× less** | **265.6× less** | **12.4% less** |
 
 Native mode lets supported devices run directly, without a separate SDK server. Additional devices use the bundled native driver worker when needed.
 
-*Measured for 60 seconds on Windows 11 with 16 logical processors. RAM is mean working set; CPU is the share of the whole machine. The SDK total includes the app and OpenRGB 1.1 CLI server. Results depend on hardware and selected devices; the Native run did not need the extra driver worker. This is a comparison of this app's two connection modes, not a benchmark of OpenRGB's desktop UI. [Method and results](docs/benchmarks/README.md).*
-
-## An easy way to enjoy the OpenRGB ecosystem
-
-[OpenRGB](https://openrgb.org/) provides the open-source driver foundation behind much of our device coverage. Very Light RGB brings that work into a focused Windows experience:
-
-| What you want | What Very Light RGB gives you |
-| --- | --- |
-| Install and start changing your lights | One Windows installer with native drivers included |
-| Animated lighting without extra setup | Nine effects built into the app |
-| A small app you can leave running | Tray controls, an on-demand menu, and direct Native mode |
-| Different looks across your setup | Independent colors, brightness, and effects per output |
-| Keep your existing OpenRGB setup | Optional SDK mode connects to your OpenRGB server |
-
-Already use OpenRGB? Keep your existing server and try Very Light RGB as a compact lighting front end. Starting fresh? Native Auto mode is ready out of the box.
+*Measured on November 2, 2026, for approximately 60 seconds per app on the same Windows 11 PC with 16 logical processors. RAM is mean private physical memory; CPU is the share of the whole machine. Disk figures include measured program files, data, and caches; our full package includes the source archive. 1 GB = 1,000 MB. Effects and device coverage differed: OpenRGB ran without software animation, and Razer used an existing Synapse installation with shared components. These are local resource snapshots, not a startup-time or animation-speed ranking. [Method and limitations](docs/benchmarks/windows-apps-2026-11-02.md) · [Measurements](docs/benchmarks/windows-apps-2026-11-02.json).*
 
 ## Download once. Keep it fresh.
 

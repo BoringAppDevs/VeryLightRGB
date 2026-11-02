@@ -1,0 +1,2263 @@
+{
+  "Date": "2026-11-02",
+  "Timezone": "Europe/Budapest",
+  "Hardware": {
+    "OS": "Windows 11 Pro 10.0.26300",
+    "CPU": "AMD Ryzen 7 9800X3D",
+    "LogicalProcessors": 16,
+    "InstalledRAMGiB": 32,
+    "Motherboard": "MSI MAG B850M MORTAR WIFI",
+    "GPU": "Gainward GeForce RTX 5080 Phoenix"
+  },
+  "Scope": "Local background resource snapshots; workloads and supported devices differ. Not a startup-latency or animation-speed benchmark. Known disk roots include caches and existing shared components; not a clean-install disk delta.",
+  "RAM": "Private working set is private physical RAM. Summed total working sets may double-count shared pages. Private commit is a separate virtual-memory metric.",
+  "CPU": "CPU-time counter deltas divided by Stopwatch wall time and 16 logical processors; 100% is the entire machine. Kernel-driver allocations and work outside attributed processes are not included.",
+  "Disk": "MiB = 1048576 bytes. Known logical file sizes; allocation values are FileStandardInfo.AllocationSize where available. NTFS metadata, hard-link deduplication and generic Windows Installer/driver-store caches are not fully accounted for. Razer ProgramData enumeration had one access error, so its footprint is a lower bound.",
+  "Cleanup": {
+    "Timestamp": "2026-11-02T20:28:58.470981+01:00",
+    "Processes": 0,
+    "Services": 0,
+    "TestDrivers": 0,
+    "Registrations": 0,
+    "Packages": 0,
+    "StartupEntries": 0,
+    "ScheduledTasks": 0,
+    "RestoredLightingOutputs": 4,
+    "RestorationFailures": 0,
+    "OriginalSettingsUnchanged": true
+  },
+  "Results": [
+    {
+      "Key": "very-light-rgb",
+      "Name": "Very Light RGB",
+      "Version": "1.2.0.0",
+      "Scenario": "background-Native-Auto-three-ARGB-headers-plus-GPU-Rainbow-menu-closed",
+      "Timestamp": "2026-11-02T20:24:35.3988676+01:00",
+      "Seconds": 60.084,
+      "SampleCount": 55,
+      "CpuTimeSeconds": 0.953125,
+      "CpuPercentMachine": 0.09915,
+      "MeanWorkingSetMiB": 17.691,
+      "MeanPrivateWorkingSetMiB": 3.766,
+      "MeanPrivateCommitMiB": 4.688,
+      "KnownFileBytes": 82995174,
+      "KnownFileMiB": 79.15,
+      "Disk": [
+        {
+          "Area": "LocalAppData/Programs/VeryLightRGB",
+          "LogicalBytes": 82903067,
+          "AllocatedBytes": 82997656,
+          "Files": 47,
+          "ReadErrors": 0,
+          "AllocationErrors": 0
+        },
+        {
+          "Area": "LocalAppData/VeryLightRGB",
+          "LogicalBytes": 92107,
+          "AllocatedBytes": 122848,
+          "Files": 31,
+          "ReadErrors": 0,
+          "AllocationErrors": 0
+        }
+      ],
+      "Samples": [
+        {
+          "ElapsedSeconds": 0.0,
+          "Processes": 1,
+          "WorkingSetMiB": 17.691,
+          "PrivateWorkingSetMiB": 3.766,
+          "PrivateCommitMiB": 4.688
+        },
+        {
+          "ElapsedSeconds": 1.138,
+          "Processes": 1,
+          "WorkingSetMiB": 17.691,
+          "PrivateWorkingSetMiB": 3.766,
+          "PrivateCommitMiB": 4.688
+        },
+        {
+          "ElapsedSeconds": 2.277,
+          "Processes": 1,
+          "WorkingSetMiB": 17.691,
+          "PrivateWorkingSetMiB": 3.766,
+          "PrivateCommitMiB": 4.688
+        },
+        {
+          "ElapsedSeconds": 3.402,
+          "Processes": 1,
+          "WorkingSetMiB": 17.691,
+          "PrivateWorkingSetMiB": 3.766,
+          "PrivateCommitMiB": 4.688
+        },
+        {
+          "ElapsedSeconds": 4.514,
+          "Processes": 1,
+          "WorkingSetMiB": 17.691,
+          "PrivateWorkingSetMiB": 3.766,
+          "PrivateCommitMiB": 4.688
+        },
+        {
+          "ElapsedSeconds": 5.642,
+          "Processes": 1,
+          "WorkingSetMiB": 17.691,
+          "PrivateWorkingSetMiB": 3.766,
+          "PrivateCommitMiB": 4.688
+        },
+        {
+          "ElapsedSeconds": 6.752,
+          "Processes": 1,
+          "WorkingSetMiB": 17.691,
+          "PrivateWorkingSetMiB": 3.766,
+          "PrivateCommitMiB": 4.688
+        },
+        {
+          "ElapsedSeconds": 7.866,
+          "Processes": 1,
+          "WorkingSetMiB": 17.691,
+          "PrivateWorkingSetMiB": 3.766,
+          "PrivateCommitMiB": 4.688
+        },
+        {
+          "ElapsedSeconds": 8.977,
+          "Processes": 1,
+          "WorkingSetMiB": 17.691,
+          "PrivateWorkingSetMiB": 3.766,
+          "PrivateCommitMiB": 4.688
+        },
+        {
+          "ElapsedSeconds": 10.083,
+          "Processes": 1,
+          "WorkingSetMiB": 17.691,
+          "PrivateWorkingSetMiB": 3.766,
+          "PrivateCommitMiB": 4.688
+        },
+        {
+          "ElapsedSeconds": 11.194,
+          "Processes": 1,
+          "WorkingSetMiB": 17.691,
+          "PrivateWorkingSetMiB": 3.766,
+          "PrivateCommitMiB": 4.688
+        },
+        {
+          "ElapsedSeconds": 12.304,
+          "Processes": 1,
+          "WorkingSetMiB": 17.691,
+          "PrivateWorkingSetMiB": 3.766,
+          "PrivateCommitMiB": 4.688
+        },
+        {
+          "ElapsedSeconds": 13.416,
+          "Processes": 1,
+          "WorkingSetMiB": 17.691,
+          "PrivateWorkingSetMiB": 3.766,
+          "PrivateCommitMiB": 4.688
+        },
+        {
+          "ElapsedSeconds": 14.528,
+          "Processes": 1,
+          "WorkingSetMiB": 17.691,
+          "PrivateWorkingSetMiB": 3.766,
+          "PrivateCommitMiB": 4.688
+        },
+        {
+          "ElapsedSeconds": 15.643,
+          "Processes": 1,
+          "WorkingSetMiB": 17.691,
+          "PrivateWorkingSetMiB": 3.766,
+          "PrivateCommitMiB": 4.688
+        },
+        {
+          "ElapsedSeconds": 16.758,
+          "Processes": 1,
+          "WorkingSetMiB": 17.691,
+          "PrivateWorkingSetMiB": 3.766,
+          "PrivateCommitMiB": 4.688
+        },
+        {
+          "ElapsedSeconds": 17.872,
+          "Processes": 1,
+          "WorkingSetMiB": 17.691,
+          "PrivateWorkingSetMiB": 3.766,
+          "PrivateCommitMiB": 4.688
+        },
+        {
+          "ElapsedSeconds": 18.98,
+          "Processes": 1,
+          "WorkingSetMiB": 17.691,
+          "PrivateWorkingSetMiB": 3.766,
+          "PrivateCommitMiB": 4.688
+        },
+        {
+          "ElapsedSeconds": 20.1,
+          "Processes": 1,
+          "WorkingSetMiB": 17.691,
+          "PrivateWorkingSetMiB": 3.766,
+          "PrivateCommitMiB": 4.688
+        },
+        {
+          "ElapsedSeconds": 21.2,
+          "Processes": 1,
+          "WorkingSetMiB": 17.691,
+          "PrivateWorkingSetMiB": 3.766,
+          "PrivateCommitMiB": 4.688
+        },
+        {
+          "ElapsedSeconds": 22.311,
+          "Processes": 1,
+          "WorkingSetMiB": 17.691,
+          "PrivateWorkingSetMiB": 3.766,
+          "PrivateCommitMiB": 4.688
+        },
+        {
+          "ElapsedSeconds": 23.417,
+          "Processes": 1,
+          "WorkingSetMiB": 17.691,
+          "PrivateWorkingSetMiB": 3.766,
+          "PrivateCommitMiB": 4.688
+        },
+        {
+          "ElapsedSeconds": 24.525,
+          "Processes": 1,
+          "WorkingSetMiB": 17.691,
+          "PrivateWorkingSetMiB": 3.766,
+          "PrivateCommitMiB": 4.688
+        },
+        {
+          "ElapsedSeconds": 25.631,
+          "Processes": 1,
+          "WorkingSetMiB": 17.691,
+          "PrivateWorkingSetMiB": 3.766,
+          "PrivateCommitMiB": 4.688
+        },
+        {
+          "ElapsedSeconds": 26.741,
+          "Processes": 1,
+          "WorkingSetMiB": 17.691,
+          "PrivateWorkingSetMiB": 3.766,
+          "PrivateCommitMiB": 4.688
+        },
+        {
+          "ElapsedSeconds": 27.845,
+          "Processes": 1,
+          "WorkingSetMiB": 17.691,
+          "PrivateWorkingSetMiB": 3.766,
+          "PrivateCommitMiB": 4.688
+        },
+        {
+          "ElapsedSeconds": 28.958,
+          "Processes": 1,
+          "WorkingSetMiB": 17.691,
+          "PrivateWorkingSetMiB": 3.766,
+          "PrivateCommitMiB": 4.688
+        },
+        {
+          "ElapsedSeconds": 30.067,
+          "Processes": 1,
+          "WorkingSetMiB": 17.691,
+          "PrivateWorkingSetMiB": 3.766,
+          "PrivateCommitMiB": 4.688
+        },
+        {
+          "ElapsedSeconds": 31.179,
+          "Processes": 1,
+          "WorkingSetMiB": 17.691,
+          "PrivateWorkingSetMiB": 3.766,
+          "PrivateCommitMiB": 4.688
+        },
+        {
+          "ElapsedSeconds": 32.3,
+          "Processes": 1,
+          "WorkingSetMiB": 17.691,
+          "PrivateWorkingSetMiB": 3.766,
+          "PrivateCommitMiB": 4.688
+        },
+        {
+          "ElapsedSeconds": 33.414,
+          "Processes": 1,
+          "WorkingSetMiB": 17.691,
+          "PrivateWorkingSetMiB": 3.766,
+          "PrivateCommitMiB": 4.688
+        },
+        {
+          "ElapsedSeconds": 34.535,
+          "Processes": 1,
+          "WorkingSetMiB": 17.691,
+          "PrivateWorkingSetMiB": 3.766,
+          "PrivateCommitMiB": 4.688
+        },
+        {
+          "ElapsedSeconds": 35.643,
+          "Processes": 1,
+          "WorkingSetMiB": 17.691,
+          "PrivateWorkingSetMiB": 3.766,
+          "PrivateCommitMiB": 4.688
+        },
+        {
+          "ElapsedSeconds": 36.754,
+          "Processes": 1,
+          "WorkingSetMiB": 17.691,
+          "PrivateWorkingSetMiB": 3.766,
+          "PrivateCommitMiB": 4.688
+        },
+        {
+          "ElapsedSeconds": 37.851,
+          "Processes": 1,
+          "WorkingSetMiB": 17.691,
+          "PrivateWorkingSetMiB": 3.766,
+          "PrivateCommitMiB": 4.688
+        },
+        {
+          "ElapsedSeconds": 38.967,
+          "Processes": 1,
+          "WorkingSetMiB": 17.691,
+          "PrivateWorkingSetMiB": 3.766,
+          "PrivateCommitMiB": 4.688
+        },
+        {
+          "ElapsedSeconds": 40.076,
+          "Processes": 1,
+          "WorkingSetMiB": 17.691,
+          "PrivateWorkingSetMiB": 3.766,
+          "PrivateCommitMiB": 4.688
+        },
+        {
+          "ElapsedSeconds": 41.183,
+          "Processes": 1,
+          "WorkingSetMiB": 17.691,
+          "PrivateWorkingSetMiB": 3.766,
+          "PrivateCommitMiB": 4.688
+        },
+        {
+          "ElapsedSeconds": 42.29,
+          "Processes": 1,
+          "WorkingSetMiB": 17.691,
+          "PrivateWorkingSetMiB": 3.766,
+          "PrivateCommitMiB": 4.688
+        },
+        {
+          "ElapsedSeconds": 43.385,
+          "Processes": 1,
+          "WorkingSetMiB": 17.691,
+          "PrivateWorkingSetMiB": 3.766,
+          "PrivateCommitMiB": 4.688
+        },
+        {
+          "ElapsedSeconds": 44.501,
+          "Processes": 1,
+          "WorkingSetMiB": 17.691,
+          "PrivateWorkingSetMiB": 3.766,
+          "PrivateCommitMiB": 4.688
+        },
+        {
+          "ElapsedSeconds": 45.609,
+          "Processes": 1,
+          "WorkingSetMiB": 17.691,
+          "PrivateWorkingSetMiB": 3.766,
+          "PrivateCommitMiB": 4.688
+        },
+        {
+          "ElapsedSeconds": 46.733,
+          "Processes": 1,
+          "WorkingSetMiB": 17.691,
+          "PrivateWorkingSetMiB": 3.766,
+          "PrivateCommitMiB": 4.688
+        },
+        {
+          "ElapsedSeconds": 47.848,
+          "Processes": 1,
+          "WorkingSetMiB": 17.691,
+          "PrivateWorkingSetMiB": 3.766,
+          "PrivateCommitMiB": 4.688
+        },
+        {
+          "ElapsedSeconds": 48.968,
+          "Processes": 1,
+          "WorkingSetMiB": 17.691,
+          "PrivateWorkingSetMiB": 3.766,
+          "PrivateCommitMiB": 4.688
+        },
+        {
+          "ElapsedSeconds": 50.082,
+          "Processes": 1,
+          "WorkingSetMiB": 17.691,
+          "PrivateWorkingSetMiB": 3.766,
+          "PrivateCommitMiB": 4.688
+        },
+        {
+          "ElapsedSeconds": 51.186,
+          "Processes": 1,
+          "WorkingSetMiB": 17.691,
+          "PrivateWorkingSetMiB": 3.766,
+          "PrivateCommitMiB": 4.688
+        },
+        {
+          "ElapsedSeconds": 52.298,
+          "Processes": 1,
+          "WorkingSetMiB": 17.691,
+          "PrivateWorkingSetMiB": 3.766,
+          "PrivateCommitMiB": 4.688
+        },
+        {
+          "ElapsedSeconds": 53.405,
+          "Processes": 1,
+          "WorkingSetMiB": 17.691,
+          "PrivateWorkingSetMiB": 3.766,
+          "PrivateCommitMiB": 4.688
+        },
+        {
+          "ElapsedSeconds": 54.517,
+          "Processes": 1,
+          "WorkingSetMiB": 17.691,
+          "PrivateWorkingSetMiB": 3.766,
+          "PrivateCommitMiB": 4.688
+        },
+        {
+          "ElapsedSeconds": 55.632,
+          "Processes": 1,
+          "WorkingSetMiB": 17.691,
+          "PrivateWorkingSetMiB": 3.766,
+          "PrivateCommitMiB": 4.688
+        },
+        {
+          "ElapsedSeconds": 56.746,
+          "Processes": 1,
+          "WorkingSetMiB": 17.691,
+          "PrivateWorkingSetMiB": 3.766,
+          "PrivateCommitMiB": 4.688
+        },
+        {
+          "ElapsedSeconds": 57.865,
+          "Processes": 1,
+          "WorkingSetMiB": 17.691,
+          "PrivateWorkingSetMiB": 3.766,
+          "PrivateCommitMiB": 4.688
+        },
+        {
+          "ElapsedSeconds": 58.974,
+          "Processes": 1,
+          "WorkingSetMiB": 17.691,
+          "PrivateWorkingSetMiB": 3.766,
+          "PrivateCommitMiB": 4.688
+        },
+        {
+          "ElapsedSeconds": 60.084,
+          "Processes": 1,
+          "WorkingSetMiB": 17.691,
+          "PrivateWorkingSetMiB": 3.766,
+          "PrivateCommitMiB": 4.688
+        }
+      ]
+    },
+    {
+      "Key": "openrgb",
+      "Name": "OpenRGB",
+      "Version": "1.1.0",
+      "Scenario": "verified-minimized-idle-default-no-effects-plugin-service-stopped",
+      "Timestamp": "2026-11-02T19:53:51.237212+01:00",
+      "Seconds": 61.994,
+      "SampleCount": 57,
+      "CpuTimeSeconds": 0.28125,
+      "CpuPercentMachine": 0.02835,
+      "MeanWorkingSetMiB": 98.823,
+      "MeanPrivateWorkingSetMiB": 34.405,
+      "MeanPrivateCommitMiB": 37.721,
+      "KnownFileBytes": 51255920,
+      "KnownFileMiB": 48.88,
+      "Disk": [
+        {
+          "Area": "ProgramFiles64/OpenRGB",
+          "LogicalBytes": 51099264,
+          "AllocatedBytes": 51154944,
+          "Files": 35,
+          "ReadErrors": 0,
+          "AllocationErrors": 0
+        },
+        {
+          "Area": "TestData/openrgb-config",
+          "LogicalBytes": 156656,
+          "AllocatedBytes": 163840,
+          "Files": 3,
+          "ReadErrors": 0,
+          "AllocationErrors": 0
+        }
+      ],
+      "Samples": [
+        {
+          "ElapsedSeconds": 0.0,
+          "Processes": 1,
+          "WorkingSetMiB": 99.316,
+          "PrivateWorkingSetMiB": 34.445,
+          "PrivateCommitMiB": 37.695
+        },
+        {
+          "ElapsedSeconds": 1.13,
+          "Processes": 1,
+          "WorkingSetMiB": 99.316,
+          "PrivateWorkingSetMiB": 34.445,
+          "PrivateCommitMiB": 37.695
+        },
+        {
+          "ElapsedSeconds": 2.263,
+          "Processes": 1,
+          "WorkingSetMiB": 99.316,
+          "PrivateWorkingSetMiB": 34.445,
+          "PrivateCommitMiB": 37.695
+        },
+        {
+          "ElapsedSeconds": 3.369,
+          "Processes": 1,
+          "WorkingSetMiB": 99.316,
+          "PrivateWorkingSetMiB": 34.445,
+          "PrivateCommitMiB": 37.695
+        },
+        {
+          "ElapsedSeconds": 4.483,
+          "Processes": 1,
+          "WorkingSetMiB": 99.316,
+          "PrivateWorkingSetMiB": 34.445,
+          "PrivateCommitMiB": 37.695
+        },
+        {
+          "ElapsedSeconds": 5.586,
+          "Processes": 1,
+          "WorkingSetMiB": 99.316,
+          "PrivateWorkingSetMiB": 34.445,
+          "PrivateCommitMiB": 37.695
+        },
+        {
+          "ElapsedSeconds": 6.689,
+          "Processes": 1,
+          "WorkingSetMiB": 99.316,
+          "PrivateWorkingSetMiB": 34.445,
+          "PrivateCommitMiB": 37.695
+        },
+        {
+          "ElapsedSeconds": 7.803,
+          "Processes": 1,
+          "WorkingSetMiB": 99.316,
+          "PrivateWorkingSetMiB": 34.445,
+          "PrivateCommitMiB": 37.695
+        },
+        {
+          "ElapsedSeconds": 8.901,
+          "Processes": 1,
+          "WorkingSetMiB": 99.316,
+          "PrivateWorkingSetMiB": 34.445,
+          "PrivateCommitMiB": 37.695
+        },
+        {
+          "ElapsedSeconds": 9.997,
+          "Processes": 1,
+          "WorkingSetMiB": 99.316,
+          "PrivateWorkingSetMiB": 34.445,
+          "PrivateCommitMiB": 37.695
+        },
+        {
+          "ElapsedSeconds": 11.122,
+          "Processes": 1,
+          "WorkingSetMiB": 99.316,
+          "PrivateWorkingSetMiB": 34.445,
+          "PrivateCommitMiB": 37.695
+        },
+        {
+          "ElapsedSeconds": 12.223,
+          "Processes": 1,
+          "WorkingSetMiB": 99.348,
+          "PrivateWorkingSetMiB": 34.461,
+          "PrivateCommitMiB": 37.727
+        },
+        {
+          "ElapsedSeconds": 13.321,
+          "Processes": 1,
+          "WorkingSetMiB": 99.348,
+          "PrivateWorkingSetMiB": 34.461,
+          "PrivateCommitMiB": 37.727
+        },
+        {
+          "ElapsedSeconds": 14.435,
+          "Processes": 1,
+          "WorkingSetMiB": 99.348,
+          "PrivateWorkingSetMiB": 34.461,
+          "PrivateCommitMiB": 37.727
+        },
+        {
+          "ElapsedSeconds": 15.541,
+          "Processes": 1,
+          "WorkingSetMiB": 99.348,
+          "PrivateWorkingSetMiB": 34.461,
+          "PrivateCommitMiB": 37.727
+        },
+        {
+          "ElapsedSeconds": 16.644,
+          "Processes": 1,
+          "WorkingSetMiB": 99.348,
+          "PrivateWorkingSetMiB": 34.461,
+          "PrivateCommitMiB": 37.727
+        },
+        {
+          "ElapsedSeconds": 17.743,
+          "Processes": 1,
+          "WorkingSetMiB": 99.348,
+          "PrivateWorkingSetMiB": 34.461,
+          "PrivateCommitMiB": 37.727
+        },
+        {
+          "ElapsedSeconds": 18.846,
+          "Processes": 1,
+          "WorkingSetMiB": 99.348,
+          "PrivateWorkingSetMiB": 34.461,
+          "PrivateCommitMiB": 37.727
+        },
+        {
+          "ElapsedSeconds": 19.945,
+          "Processes": 1,
+          "WorkingSetMiB": 99.348,
+          "PrivateWorkingSetMiB": 34.461,
+          "PrivateCommitMiB": 37.727
+        },
+        {
+          "ElapsedSeconds": 21.045,
+          "Processes": 1,
+          "WorkingSetMiB": 99.348,
+          "PrivateWorkingSetMiB": 34.461,
+          "PrivateCommitMiB": 37.727
+        },
+        {
+          "ElapsedSeconds": 22.147,
+          "Processes": 1,
+          "WorkingSetMiB": 99.348,
+          "PrivateWorkingSetMiB": 34.461,
+          "PrivateCommitMiB": 37.727
+        },
+        {
+          "ElapsedSeconds": 23.253,
+          "Processes": 1,
+          "WorkingSetMiB": 99.348,
+          "PrivateWorkingSetMiB": 34.461,
+          "PrivateCommitMiB": 37.727
+        },
+        {
+          "ElapsedSeconds": 24.364,
+          "Processes": 1,
+          "WorkingSetMiB": 99.332,
+          "PrivateWorkingSetMiB": 34.461,
+          "PrivateCommitMiB": 37.727
+        },
+        {
+          "ElapsedSeconds": 25.465,
+          "Processes": 1,
+          "WorkingSetMiB": 99.273,
+          "PrivateWorkingSetMiB": 34.461,
+          "PrivateCommitMiB": 37.727
+        },
+        {
+          "ElapsedSeconds": 26.572,
+          "Processes": 1,
+          "WorkingSetMiB": 99.273,
+          "PrivateWorkingSetMiB": 34.461,
+          "PrivateCommitMiB": 37.727
+        },
+        {
+          "ElapsedSeconds": 27.687,
+          "Processes": 1,
+          "WorkingSetMiB": 99.273,
+          "PrivateWorkingSetMiB": 34.461,
+          "PrivateCommitMiB": 37.727
+        },
+        {
+          "ElapsedSeconds": 28.799,
+          "Processes": 1,
+          "WorkingSetMiB": 99.273,
+          "PrivateWorkingSetMiB": 34.461,
+          "PrivateCommitMiB": 37.727
+        },
+        {
+          "ElapsedSeconds": 29.902,
+          "Processes": 1,
+          "WorkingSetMiB": 99.273,
+          "PrivateWorkingSetMiB": 34.461,
+          "PrivateCommitMiB": 37.727
+        },
+        {
+          "ElapsedSeconds": 31.005,
+          "Processes": 1,
+          "WorkingSetMiB": 99.273,
+          "PrivateWorkingSetMiB": 34.461,
+          "PrivateCommitMiB": 37.727
+        },
+        {
+          "ElapsedSeconds": 32.104,
+          "Processes": 1,
+          "WorkingSetMiB": 99.273,
+          "PrivateWorkingSetMiB": 34.461,
+          "PrivateCommitMiB": 37.727
+        },
+        {
+          "ElapsedSeconds": 33.213,
+          "Processes": 1,
+          "WorkingSetMiB": 99.273,
+          "PrivateWorkingSetMiB": 34.461,
+          "PrivateCommitMiB": 37.727
+        },
+        {
+          "ElapsedSeconds": 34.318,
+          "Processes": 1,
+          "WorkingSetMiB": 99.273,
+          "PrivateWorkingSetMiB": 34.461,
+          "PrivateCommitMiB": 37.727
+        },
+        {
+          "ElapsedSeconds": 35.421,
+          "Processes": 1,
+          "WorkingSetMiB": 99.273,
+          "PrivateWorkingSetMiB": 34.461,
+          "PrivateCommitMiB": 37.727
+        },
+        {
+          "ElapsedSeconds": 36.521,
+          "Processes": 1,
+          "WorkingSetMiB": 99.273,
+          "PrivateWorkingSetMiB": 34.461,
+          "PrivateCommitMiB": 37.727
+        },
+        {
+          "ElapsedSeconds": 37.622,
+          "Processes": 1,
+          "WorkingSetMiB": 99.273,
+          "PrivateWorkingSetMiB": 34.461,
+          "PrivateCommitMiB": 37.727
+        },
+        {
+          "ElapsedSeconds": 38.726,
+          "Processes": 1,
+          "WorkingSetMiB": 99.273,
+          "PrivateWorkingSetMiB": 34.461,
+          "PrivateCommitMiB": 37.727
+        },
+        {
+          "ElapsedSeconds": 39.84,
+          "Processes": 1,
+          "WorkingSetMiB": 99.273,
+          "PrivateWorkingSetMiB": 34.461,
+          "PrivateCommitMiB": 37.727
+        },
+        {
+          "ElapsedSeconds": 40.937,
+          "Processes": 1,
+          "WorkingSetMiB": 99.273,
+          "PrivateWorkingSetMiB": 34.461,
+          "PrivateCommitMiB": 37.727
+        },
+        {
+          "ElapsedSeconds": 42.042,
+          "Processes": 1,
+          "WorkingSetMiB": 99.273,
+          "PrivateWorkingSetMiB": 34.461,
+          "PrivateCommitMiB": 37.727
+        },
+        {
+          "ElapsedSeconds": 43.159,
+          "Processes": 1,
+          "WorkingSetMiB": 99.164,
+          "PrivateWorkingSetMiB": 34.461,
+          "PrivateCommitMiB": 37.727
+        },
+        {
+          "ElapsedSeconds": 44.274,
+          "Processes": 1,
+          "WorkingSetMiB": 99.008,
+          "PrivateWorkingSetMiB": 34.461,
+          "PrivateCommitMiB": 37.727
+        },
+        {
+          "ElapsedSeconds": 45.375,
+          "Processes": 1,
+          "WorkingSetMiB": 98.422,
+          "PrivateWorkingSetMiB": 34.461,
+          "PrivateCommitMiB": 37.727
+        },
+        {
+          "ElapsedSeconds": 46.476,
+          "Processes": 1,
+          "WorkingSetMiB": 98.129,
+          "PrivateWorkingSetMiB": 34.461,
+          "PrivateCommitMiB": 37.727
+        },
+        {
+          "ElapsedSeconds": 47.581,
+          "Processes": 1,
+          "WorkingSetMiB": 97.875,
+          "PrivateWorkingSetMiB": 34.461,
+          "PrivateCommitMiB": 37.727
+        },
+        {
+          "ElapsedSeconds": 48.693,
+          "Processes": 1,
+          "WorkingSetMiB": 97.715,
+          "PrivateWorkingSetMiB": 34.461,
+          "PrivateCommitMiB": 37.727
+        },
+        {
+          "ElapsedSeconds": 49.795,
+          "Processes": 1,
+          "WorkingSetMiB": 97.715,
+          "PrivateWorkingSetMiB": 34.461,
+          "PrivateCommitMiB": 37.727
+        },
+        {
+          "ElapsedSeconds": 50.911,
+          "Processes": 1,
+          "WorkingSetMiB": 97.715,
+          "PrivateWorkingSetMiB": 34.461,
+          "PrivateCommitMiB": 37.727
+        },
+        {
+          "ElapsedSeconds": 52.035,
+          "Processes": 1,
+          "WorkingSetMiB": 97.715,
+          "PrivateWorkingSetMiB": 34.461,
+          "PrivateCommitMiB": 37.727
+        },
+        {
+          "ElapsedSeconds": 53.137,
+          "Processes": 1,
+          "WorkingSetMiB": 97.621,
+          "PrivateWorkingSetMiB": 34.367,
+          "PrivateCommitMiB": 37.727
+        },
+        {
+          "ElapsedSeconds": 54.243,
+          "Processes": 1,
+          "WorkingSetMiB": 97.434,
+          "PrivateWorkingSetMiB": 34.18,
+          "PrivateCommitMiB": 37.727
+        },
+        {
+          "ElapsedSeconds": 55.35,
+          "Processes": 1,
+          "WorkingSetMiB": 97.344,
+          "PrivateWorkingSetMiB": 34.09,
+          "PrivateCommitMiB": 37.727
+        },
+        {
+          "ElapsedSeconds": 56.459,
+          "Processes": 1,
+          "WorkingSetMiB": 97.34,
+          "PrivateWorkingSetMiB": 34.086,
+          "PrivateCommitMiB": 37.727
+        },
+        {
+          "ElapsedSeconds": 57.564,
+          "Processes": 1,
+          "WorkingSetMiB": 97.34,
+          "PrivateWorkingSetMiB": 34.086,
+          "PrivateCommitMiB": 37.727
+        },
+        {
+          "ElapsedSeconds": 58.677,
+          "Processes": 1,
+          "WorkingSetMiB": 97.34,
+          "PrivateWorkingSetMiB": 34.086,
+          "PrivateCommitMiB": 37.727
+        },
+        {
+          "ElapsedSeconds": 59.781,
+          "Processes": 1,
+          "WorkingSetMiB": 97.34,
+          "PrivateWorkingSetMiB": 34.086,
+          "PrivateCommitMiB": 37.727
+        },
+        {
+          "ElapsedSeconds": 60.896,
+          "Processes": 1,
+          "WorkingSetMiB": 97.34,
+          "PrivateWorkingSetMiB": 34.086,
+          "PrivateCommitMiB": 37.727
+        },
+        {
+          "ElapsedSeconds": 61.994,
+          "Processes": 1,
+          "WorkingSetMiB": 97.34,
+          "PrivateWorkingSetMiB": 34.086,
+          "PrivateCommitMiB": 37.727
+        }
+      ]
+    },
+    {
+      "Key": "signalrgb",
+      "Name": "SignalRGB",
+      "Version": "2.5.84.0; service 0.2.16; SignalIO 1.3.9",
+      "Scenario": "minimized-guest-Neon-Shift-default-detected-devices-fan-control-declined",
+      "Timestamp": "2026-11-02T20:18:02.3797368+01:00",
+      "Seconds": 60.184,
+      "SampleCount": 55,
+      "CpuTimeSeconds": 10.515625,
+      "CpuPercentMachine": 1.09202,
+      "MeanWorkingSetMiB": 1004.057,
+      "MeanPrivateWorkingSetMiB": 647.764,
+      "MeanPrivateCommitMiB": 1129.766,
+      "KnownFileBytes": 1178135458,
+      "KnownFileMiB": 1123.56,
+      "Disk": [
+        {
+          "Area": "LocalAppData/VortxEngine",
+          "LogicalBytes": 1097980092,
+          "AllocatedBytes": 1102019776,
+          "Files": 2623,
+          "ReadErrors": 0,
+          "AllocationErrors": 0
+        },
+        {
+          "Area": "LocalAppData/WhirlwindFX",
+          "LogicalBytes": 67717846,
+          "AllocatedBytes": 70424600,
+          "Files": 1449,
+          "ReadErrors": 0,
+          "AllocationErrors": 0
+        },
+        {
+          "Area": "ProgramData/WhirlwindFX",
+          "LogicalBytes": 12381752,
+          "AllocatedBytes": 12386304,
+          "Files": 2,
+          "ReadErrors": 0,
+          "AllocationErrors": 0
+        },
+        {
+          "Area": "WindowsDrivers/SignalRgbDriver.sys",
+          "LogicalBytes": 55768,
+          "AllocatedBytes": null,
+          "Files": 1,
+          "ReadErrors": 0,
+          "AllocationErrors": null
+        }
+      ],
+      "Samples": [
+        {
+          "ElapsedSeconds": 0.0,
+          "Processes": 6,
+          "WorkingSetMiB": 1004.676,
+          "PrivateWorkingSetMiB": 648.383,
+          "PrivateCommitMiB": 1132.008
+        },
+        {
+          "ElapsedSeconds": 1.154,
+          "Processes": 6,
+          "WorkingSetMiB": 1004.629,
+          "PrivateWorkingSetMiB": 648.336,
+          "PrivateCommitMiB": 1131.961
+        },
+        {
+          "ElapsedSeconds": 2.278,
+          "Processes": 6,
+          "WorkingSetMiB": 1006.695,
+          "PrivateWorkingSetMiB": 650.406,
+          "PrivateCommitMiB": 1134.031
+        },
+        {
+          "ElapsedSeconds": 3.396,
+          "Processes": 6,
+          "WorkingSetMiB": 1006.738,
+          "PrivateWorkingSetMiB": 650.457,
+          "PrivateCommitMiB": 1134.082
+        },
+        {
+          "ElapsedSeconds": 4.52,
+          "Processes": 6,
+          "WorkingSetMiB": 1005.832,
+          "PrivateWorkingSetMiB": 649.562,
+          "PrivateCommitMiB": 1133.18
+        },
+        {
+          "ElapsedSeconds": 5.643,
+          "Processes": 6,
+          "WorkingSetMiB": 1005.688,
+          "PrivateWorkingSetMiB": 649.426,
+          "PrivateCommitMiB": 1133.039
+        },
+        {
+          "ElapsedSeconds": 6.751,
+          "Processes": 6,
+          "WorkingSetMiB": 1007.121,
+          "PrivateWorkingSetMiB": 650.859,
+          "PrivateCommitMiB": 1134.449
+        },
+        {
+          "ElapsedSeconds": 7.877,
+          "Processes": 6,
+          "WorkingSetMiB": 1005.891,
+          "PrivateWorkingSetMiB": 649.637,
+          "PrivateCommitMiB": 1133.219
+        },
+        {
+          "ElapsedSeconds": 8.992,
+          "Processes": 6,
+          "WorkingSetMiB": 1003.172,
+          "PrivateWorkingSetMiB": 646.918,
+          "PrivateCommitMiB": 1130.48
+        },
+        {
+          "ElapsedSeconds": 10.112,
+          "Processes": 6,
+          "WorkingSetMiB": 1003.02,
+          "PrivateWorkingSetMiB": 646.766,
+          "PrivateCommitMiB": 1130.371
+        },
+        {
+          "ElapsedSeconds": 11.238,
+          "Processes": 6,
+          "WorkingSetMiB": 1002.684,
+          "PrivateWorkingSetMiB": 646.418,
+          "PrivateCommitMiB": 1127.672
+        },
+        {
+          "ElapsedSeconds": 12.352,
+          "Processes": 6,
+          "WorkingSetMiB": 1005.0,
+          "PrivateWorkingSetMiB": 648.734,
+          "PrivateCommitMiB": 1129.984
+        },
+        {
+          "ElapsedSeconds": 13.472,
+          "Processes": 6,
+          "WorkingSetMiB": 1004.918,
+          "PrivateWorkingSetMiB": 648.652,
+          "PrivateCommitMiB": 1129.902
+        },
+        {
+          "ElapsedSeconds": 14.583,
+          "Processes": 6,
+          "WorkingSetMiB": 1005.055,
+          "PrivateWorkingSetMiB": 648.789,
+          "PrivateCommitMiB": 1130.039
+        },
+        {
+          "ElapsedSeconds": 15.695,
+          "Processes": 6,
+          "WorkingSetMiB": 1004.078,
+          "PrivateWorkingSetMiB": 647.812,
+          "PrivateCommitMiB": 1129.059
+        },
+        {
+          "ElapsedSeconds": 16.803,
+          "Processes": 6,
+          "WorkingSetMiB": 1006.012,
+          "PrivateWorkingSetMiB": 649.746,
+          "PrivateCommitMiB": 1130.988
+        },
+        {
+          "ElapsedSeconds": 17.915,
+          "Processes": 6,
+          "WorkingSetMiB": 1005.09,
+          "PrivateWorkingSetMiB": 648.824,
+          "PrivateCommitMiB": 1130.141
+        },
+        {
+          "ElapsedSeconds": 19.023,
+          "Processes": 6,
+          "WorkingSetMiB": 1005.445,
+          "PrivateWorkingSetMiB": 649.18,
+          "PrivateCommitMiB": 1130.449
+        },
+        {
+          "ElapsedSeconds": 20.136,
+          "Processes": 6,
+          "WorkingSetMiB": 1002.273,
+          "PrivateWorkingSetMiB": 646.012,
+          "PrivateCommitMiB": 1127.25
+        },
+        {
+          "ElapsedSeconds": 21.246,
+          "Processes": 6,
+          "WorkingSetMiB": 1002.047,
+          "PrivateWorkingSetMiB": 645.746,
+          "PrivateCommitMiB": 1126.934
+        },
+        {
+          "ElapsedSeconds": 22.357,
+          "Processes": 6,
+          "WorkingSetMiB": 1003.453,
+          "PrivateWorkingSetMiB": 647.117,
+          "PrivateCommitMiB": 1128.254
+        },
+        {
+          "ElapsedSeconds": 23.473,
+          "Processes": 6,
+          "WorkingSetMiB": 1004.465,
+          "PrivateWorkingSetMiB": 648.129,
+          "PrivateCommitMiB": 1129.262
+        },
+        {
+          "ElapsedSeconds": 24.582,
+          "Processes": 6,
+          "WorkingSetMiB": 1004.613,
+          "PrivateWorkingSetMiB": 648.281,
+          "PrivateCommitMiB": 1129.41
+        },
+        {
+          "ElapsedSeconds": 25.698,
+          "Processes": 6,
+          "WorkingSetMiB": 1003.277,
+          "PrivateWorkingSetMiB": 646.953,
+          "PrivateCommitMiB": 1128.082
+        },
+        {
+          "ElapsedSeconds": 26.819,
+          "Processes": 6,
+          "WorkingSetMiB": 1005.605,
+          "PrivateWorkingSetMiB": 649.289,
+          "PrivateCommitMiB": 1130.445
+        },
+        {
+          "ElapsedSeconds": 27.936,
+          "Processes": 6,
+          "WorkingSetMiB": 1004.539,
+          "PrivateWorkingSetMiB": 648.23,
+          "PrivateCommitMiB": 1129.422
+        },
+        {
+          "ElapsedSeconds": 29.055,
+          "Processes": 6,
+          "WorkingSetMiB": 1003.68,
+          "PrivateWorkingSetMiB": 647.379,
+          "PrivateCommitMiB": 1128.531
+        },
+        {
+          "ElapsedSeconds": 30.163,
+          "Processes": 6,
+          "WorkingSetMiB": 1003.531,
+          "PrivateWorkingSetMiB": 647.23,
+          "PrivateCommitMiB": 1128.379
+        },
+        {
+          "ElapsedSeconds": 31.279,
+          "Processes": 6,
+          "WorkingSetMiB": 1002.02,
+          "PrivateWorkingSetMiB": 645.719,
+          "PrivateCommitMiB": 1126.836
+        },
+        {
+          "ElapsedSeconds": 32.4,
+          "Processes": 6,
+          "WorkingSetMiB": 1003.156,
+          "PrivateWorkingSetMiB": 646.855,
+          "PrivateCommitMiB": 1128.016
+        },
+        {
+          "ElapsedSeconds": 33.516,
+          "Processes": 6,
+          "WorkingSetMiB": 1003.254,
+          "PrivateWorkingSetMiB": 646.953,
+          "PrivateCommitMiB": 1128.121
+        },
+        {
+          "ElapsedSeconds": 34.637,
+          "Processes": 6,
+          "WorkingSetMiB": 1003.562,
+          "PrivateWorkingSetMiB": 647.262,
+          "PrivateCommitMiB": 1128.43
+        },
+        {
+          "ElapsedSeconds": 35.758,
+          "Processes": 6,
+          "WorkingSetMiB": 1003.383,
+          "PrivateWorkingSetMiB": 647.082,
+          "PrivateCommitMiB": 1128.191
+        },
+        {
+          "ElapsedSeconds": 36.869,
+          "Processes": 6,
+          "WorkingSetMiB": 1005.176,
+          "PrivateWorkingSetMiB": 648.875,
+          "PrivateCommitMiB": 1129.988
+        },
+        {
+          "ElapsedSeconds": 37.99,
+          "Processes": 6,
+          "WorkingSetMiB": 1004.48,
+          "PrivateWorkingSetMiB": 648.18,
+          "PrivateCommitMiB": 1129.312
+        },
+        {
+          "ElapsedSeconds": 39.104,
+          "Processes": 6,
+          "WorkingSetMiB": 1004.105,
+          "PrivateWorkingSetMiB": 647.805,
+          "PrivateCommitMiB": 1129.227
+        },
+        {
+          "ElapsedSeconds": 40.216,
+          "Processes": 6,
+          "WorkingSetMiB": 1003.898,
+          "PrivateWorkingSetMiB": 647.598,
+          "PrivateCommitMiB": 1129.16
+        },
+        {
+          "ElapsedSeconds": 41.322,
+          "Processes": 6,
+          "WorkingSetMiB": 1003.969,
+          "PrivateWorkingSetMiB": 647.668,
+          "PrivateCommitMiB": 1129.207
+        },
+        {
+          "ElapsedSeconds": 42.431,
+          "Processes": 6,
+          "WorkingSetMiB": 1003.602,
+          "PrivateWorkingSetMiB": 647.301,
+          "PrivateCommitMiB": 1129.176
+        },
+        {
+          "ElapsedSeconds": 43.546,
+          "Processes": 6,
+          "WorkingSetMiB": 1002.746,
+          "PrivateWorkingSetMiB": 646.445,
+          "PrivateCommitMiB": 1128.238
+        },
+        {
+          "ElapsedSeconds": 44.662,
+          "Processes": 6,
+          "WorkingSetMiB": 1003.891,
+          "PrivateWorkingSetMiB": 647.59,
+          "PrivateCommitMiB": 1129.449
+        },
+        {
+          "ElapsedSeconds": 45.771,
+          "Processes": 6,
+          "WorkingSetMiB": 1003.281,
+          "PrivateWorkingSetMiB": 646.98,
+          "PrivateCommitMiB": 1129.523
+        },
+        {
+          "ElapsedSeconds": 46.872,
+          "Processes": 6,
+          "WorkingSetMiB": 1005.094,
+          "PrivateWorkingSetMiB": 648.793,
+          "PrivateCommitMiB": 1131.336
+        },
+        {
+          "ElapsedSeconds": 47.99,
+          "Processes": 6,
+          "WorkingSetMiB": 1003.535,
+          "PrivateWorkingSetMiB": 647.234,
+          "PrivateCommitMiB": 1129.742
+        },
+        {
+          "ElapsedSeconds": 49.102,
+          "Processes": 6,
+          "WorkingSetMiB": 1003.742,
+          "PrivateWorkingSetMiB": 647.441,
+          "PrivateCommitMiB": 1129.898
+        },
+        {
+          "ElapsedSeconds": 50.22,
+          "Processes": 6,
+          "WorkingSetMiB": 1003.414,
+          "PrivateWorkingSetMiB": 647.113,
+          "PrivateCommitMiB": 1129.57
+        },
+        {
+          "ElapsedSeconds": 51.329,
+          "Processes": 6,
+          "WorkingSetMiB": 1003.523,
+          "PrivateWorkingSetMiB": 647.223,
+          "PrivateCommitMiB": 1129.68
+        },
+        {
+          "ElapsedSeconds": 52.434,
+          "Processes": 6,
+          "WorkingSetMiB": 1004.297,
+          "PrivateWorkingSetMiB": 647.996,
+          "PrivateCommitMiB": 1130.434
+        },
+        {
+          "ElapsedSeconds": 53.543,
+          "Processes": 6,
+          "WorkingSetMiB": 1001.738,
+          "PrivateWorkingSetMiB": 645.438,
+          "PrivateCommitMiB": 1127.832
+        },
+        {
+          "ElapsedSeconds": 54.648,
+          "Processes": 6,
+          "WorkingSetMiB": 1002.395,
+          "PrivateWorkingSetMiB": 646.094,
+          "PrivateCommitMiB": 1128.5
+        },
+        {
+          "ElapsedSeconds": 55.755,
+          "Processes": 6,
+          "WorkingSetMiB": 1002.516,
+          "PrivateWorkingSetMiB": 646.215,
+          "PrivateCommitMiB": 1128.617
+        },
+        {
+          "ElapsedSeconds": 56.855,
+          "Processes": 6,
+          "WorkingSetMiB": 1004.094,
+          "PrivateWorkingSetMiB": 647.793,
+          "PrivateCommitMiB": 1130.199
+        },
+        {
+          "ElapsedSeconds": 57.959,
+          "Processes": 6,
+          "WorkingSetMiB": 1003.438,
+          "PrivateWorkingSetMiB": 647.137,
+          "PrivateCommitMiB": 1129.566
+        },
+        {
+          "ElapsedSeconds": 59.074,
+          "Processes": 6,
+          "WorkingSetMiB": 1003.008,
+          "PrivateWorkingSetMiB": 646.707,
+          "PrivateCommitMiB": 1129.133
+        },
+        {
+          "ElapsedSeconds": 60.184,
+          "Processes": 6,
+          "WorkingSetMiB": 1002.578,
+          "PrivateWorkingSetMiB": 646.277,
+          "PrivateCommitMiB": 1128.703
+        }
+      ]
+    },
+    {
+      "Key": "msi-center-mystic-light",
+      "Name": "MSI Center + Mystic Light",
+      "Version": "Center 2.0.75.0; SDK 3.2026.1013.01; Mystic Light 3.0.37.2",
+      "Scenario": "minimized-mystic-light-enabled-motherboard-detected",
+      "Timestamp": "2026-11-02T20:08:04.0905232+01:00",
+      "Seconds": 60.343,
+      "SampleCount": 55,
+      "CpuTimeSeconds": 1.609375,
+      "CpuPercentMachine": 0.16669,
+      "MeanWorkingSetMiB": 437.034,
+      "MeanPrivateWorkingSetMiB": 166.597,
+      "MeanPrivateCommitMiB": 572.817,
+      "KnownFileBytes": 1921649237,
+      "KnownFileMiB": 1832.63,
+      "Disk": [
+        {
+          "Area": "WindowsApps/MSICenter-2.0.75.0",
+          "LogicalBytes": 769217559,
+          "AllocatedBytes": 769695744,
+          "Files": 226,
+          "ReadErrors": 0,
+          "AllocationErrors": 0
+        },
+        {
+          "Area": "ProgramFiles32/MSI/MSI Center",
+          "LogicalBytes": 542973935,
+          "AllocatedBytes": 544637184,
+          "Files": 923,
+          "ReadErrors": 0,
+          "AllocationErrors": 0
+        },
+        {
+          "Area": "ProgramData/MSI/MSI Center",
+          "LogicalBytes": 589842047,
+          "AllocatedBytes": 590089688,
+          "Files": 181,
+          "ReadErrors": 0,
+          "AllocationErrors": 0
+        },
+        {
+          "Area": "ProgramFiles64/ENE/Aac_ENE Docking HAL",
+          "LogicalBytes": 11868832.0,
+          "AllocatedBytes": null,
+          "Files": null,
+          "ReadErrors": 0,
+          "AllocationErrors": null
+        },
+        {
+          "Area": "ProgramFiles64/ENE/Aac_ENE_AIC_Marvell_HAL",
+          "LogicalBytes": 426704.0,
+          "AllocatedBytes": null,
+          "Files": null,
+          "ReadErrors": 0,
+          "AllocationErrors": null
+        },
+        {
+          "Area": "ProgramFiles64/ENE/Aac_ENE_EHD_M2_HAL",
+          "LogicalBytes": 2000288.0,
+          "AllocatedBytes": null,
+          "Files": null,
+          "ReadErrors": 0,
+          "AllocationErrors": null
+        },
+        {
+          "Area": "ProgramFiles64/ENE/Aac_ENE_MousePad_HAL",
+          "LogicalBytes": 616160.0,
+          "AllocatedBytes": null,
+          "Files": null,
+          "ReadErrors": 0,
+          "AllocationErrors": null
+        },
+        {
+          "Area": "ProgramFiles64/ENE/Aac_ENE_QSI_Loki_HAL",
+          "LogicalBytes": 601808.0,
+          "AllocatedBytes": null,
+          "Files": null,
+          "ReadErrors": 0,
+          "AllocationErrors": null
+        },
+        {
+          "Area": "ProgramFiles64/ENE/Aac_ENE_X_AIC_HAL",
+          "LogicalBytes": 473824.0,
+          "AllocatedBytes": null,
+          "Files": null,
+          "ReadErrors": 0,
+          "AllocationErrors": null
+        },
+        {
+          "Area": "ProgramFiles64/ENE/Aac_ENE_X-JMI_HAL",
+          "LogicalBytes": 3628080.0,
+          "AllocatedBytes": null,
+          "Files": null,
+          "ReadErrors": 0,
+          "AllocationErrors": null
+        }
+      ],
+      "Samples": [
+        {
+          "ElapsedSeconds": 0.0,
+          "Processes": 11,
+          "WorkingSetMiB": 434.547,
+          "PrivateWorkingSetMiB": 166.336,
+          "PrivateCommitMiB": 573.965
+        },
+        {
+          "ElapsedSeconds": 1.186,
+          "Processes": 11,
+          "WorkingSetMiB": 434.551,
+          "PrivateWorkingSetMiB": 166.34,
+          "PrivateCommitMiB": 573.969
+        },
+        {
+          "ElapsedSeconds": 2.295,
+          "Processes": 11,
+          "WorkingSetMiB": 434.723,
+          "PrivateWorkingSetMiB": 166.418,
+          "PrivateCommitMiB": 574.016
+        },
+        {
+          "ElapsedSeconds": 3.421,
+          "Processes": 11,
+          "WorkingSetMiB": 434.844,
+          "PrivateWorkingSetMiB": 166.539,
+          "PrivateCommitMiB": 574.074
+        },
+        {
+          "ElapsedSeconds": 4.536,
+          "Processes": 11,
+          "WorkingSetMiB": 434.82,
+          "PrivateWorkingSetMiB": 166.516,
+          "PrivateCommitMiB": 574.031
+        },
+        {
+          "ElapsedSeconds": 5.667,
+          "Processes": 11,
+          "WorkingSetMiB": 434.816,
+          "PrivateWorkingSetMiB": 166.512,
+          "PrivateCommitMiB": 574.027
+        },
+        {
+          "ElapsedSeconds": 6.781,
+          "Processes": 11,
+          "WorkingSetMiB": 434.922,
+          "PrivateWorkingSetMiB": 166.594,
+          "PrivateCommitMiB": 574.027
+        },
+        {
+          "ElapsedSeconds": 7.902,
+          "Processes": 11,
+          "WorkingSetMiB": 435.117,
+          "PrivateWorkingSetMiB": 166.789,
+          "PrivateCommitMiB": 574.145
+        },
+        {
+          "ElapsedSeconds": 9.017,
+          "Processes": 11,
+          "WorkingSetMiB": 434.73,
+          "PrivateWorkingSetMiB": 166.359,
+          "PrivateCommitMiB": 573.578
+        },
+        {
+          "ElapsedSeconds": 10.122,
+          "Processes": 11,
+          "WorkingSetMiB": 434.875,
+          "PrivateWorkingSetMiB": 166.41,
+          "PrivateCommitMiB": 573.363
+        },
+        {
+          "ElapsedSeconds": 11.235,
+          "Processes": 11,
+          "WorkingSetMiB": 434.836,
+          "PrivateWorkingSetMiB": 166.371,
+          "PrivateCommitMiB": 573.336
+        },
+        {
+          "ElapsedSeconds": 12.356,
+          "Processes": 11,
+          "WorkingSetMiB": 434.836,
+          "PrivateWorkingSetMiB": 166.371,
+          "PrivateCommitMiB": 573.297
+        },
+        {
+          "ElapsedSeconds": 13.468,
+          "Processes": 11,
+          "WorkingSetMiB": 435.461,
+          "PrivateWorkingSetMiB": 166.406,
+          "PrivateCommitMiB": 573.238
+        },
+        {
+          "ElapsedSeconds": 14.584,
+          "Processes": 11,
+          "WorkingSetMiB": 435.492,
+          "PrivateWorkingSetMiB": 166.426,
+          "PrivateCommitMiB": 573.234
+        },
+        {
+          "ElapsedSeconds": 15.701,
+          "Processes": 11,
+          "WorkingSetMiB": 435.477,
+          "PrivateWorkingSetMiB": 166.41,
+          "PrivateCommitMiB": 573.219
+        },
+        {
+          "ElapsedSeconds": 16.814,
+          "Processes": 11,
+          "WorkingSetMiB": 435.48,
+          "PrivateWorkingSetMiB": 166.414,
+          "PrivateCommitMiB": 573.223
+        },
+        {
+          "ElapsedSeconds": 17.938,
+          "Processes": 11,
+          "WorkingSetMiB": 435.523,
+          "PrivateWorkingSetMiB": 166.457,
+          "PrivateCommitMiB": 573.273
+        },
+        {
+          "ElapsedSeconds": 19.054,
+          "Processes": 11,
+          "WorkingSetMiB": 435.41,
+          "PrivateWorkingSetMiB": 166.34,
+          "PrivateCommitMiB": 573.016
+        },
+        {
+          "ElapsedSeconds": 20.168,
+          "Processes": 11,
+          "WorkingSetMiB": 435.445,
+          "PrivateWorkingSetMiB": 166.363,
+          "PrivateCommitMiB": 572.824
+        },
+        {
+          "ElapsedSeconds": 21.282,
+          "Processes": 11,
+          "WorkingSetMiB": 435.48,
+          "PrivateWorkingSetMiB": 166.398,
+          "PrivateCommitMiB": 572.855
+        },
+        {
+          "ElapsedSeconds": 22.404,
+          "Processes": 11,
+          "WorkingSetMiB": 435.516,
+          "PrivateWorkingSetMiB": 166.41,
+          "PrivateCommitMiB": 572.879
+        },
+        {
+          "ElapsedSeconds": 23.519,
+          "Processes": 11,
+          "WorkingSetMiB": 435.48,
+          "PrivateWorkingSetMiB": 166.375,
+          "PrivateCommitMiB": 572.785
+        },
+        {
+          "ElapsedSeconds": 24.637,
+          "Processes": 11,
+          "WorkingSetMiB": 435.391,
+          "PrivateWorkingSetMiB": 166.281,
+          "PrivateCommitMiB": 572.652
+        },
+        {
+          "ElapsedSeconds": 25.761,
+          "Processes": 11,
+          "WorkingSetMiB": 435.418,
+          "PrivateWorkingSetMiB": 166.305,
+          "PrivateCommitMiB": 572.703
+        },
+        {
+          "ElapsedSeconds": 26.883,
+          "Processes": 11,
+          "WorkingSetMiB": 435.574,
+          "PrivateWorkingSetMiB": 166.438,
+          "PrivateCommitMiB": 572.852
+        },
+        {
+          "ElapsedSeconds": 27.991,
+          "Processes": 11,
+          "WorkingSetMiB": 435.512,
+          "PrivateWorkingSetMiB": 166.375,
+          "PrivateCommitMiB": 572.73
+        },
+        {
+          "ElapsedSeconds": 29.094,
+          "Processes": 11,
+          "WorkingSetMiB": 435.531,
+          "PrivateWorkingSetMiB": 166.395,
+          "PrivateCommitMiB": 572.75
+        },
+        {
+          "ElapsedSeconds": 30.207,
+          "Processes": 11,
+          "WorkingSetMiB": 435.684,
+          "PrivateWorkingSetMiB": 166.512,
+          "PrivateCommitMiB": 572.703
+        },
+        {
+          "ElapsedSeconds": 31.322,
+          "Processes": 11,
+          "WorkingSetMiB": 435.902,
+          "PrivateWorkingSetMiB": 166.73,
+          "PrivateCommitMiB": 573.023
+        },
+        {
+          "ElapsedSeconds": 32.427,
+          "Processes": 11,
+          "WorkingSetMiB": 435.555,
+          "PrivateWorkingSetMiB": 166.371,
+          "PrivateCommitMiB": 572.625
+        },
+        {
+          "ElapsedSeconds": 33.537,
+          "Processes": 11,
+          "WorkingSetMiB": 435.543,
+          "PrivateWorkingSetMiB": 166.359,
+          "PrivateCommitMiB": 572.613
+        },
+        {
+          "ElapsedSeconds": 34.649,
+          "Processes": 11,
+          "WorkingSetMiB": 435.488,
+          "PrivateWorkingSetMiB": 166.305,
+          "PrivateCommitMiB": 572.539
+        },
+        {
+          "ElapsedSeconds": 35.758,
+          "Processes": 11,
+          "WorkingSetMiB": 438.457,
+          "PrivateWorkingSetMiB": 166.688,
+          "PrivateCommitMiB": 572.426
+        },
+        {
+          "ElapsedSeconds": 36.881,
+          "Processes": 11,
+          "WorkingSetMiB": 439.418,
+          "PrivateWorkingSetMiB": 166.797,
+          "PrivateCommitMiB": 572.23
+        },
+        {
+          "ElapsedSeconds": 38.01,
+          "Processes": 11,
+          "WorkingSetMiB": 439.387,
+          "PrivateWorkingSetMiB": 166.766,
+          "PrivateCommitMiB": 572.16
+        },
+        {
+          "ElapsedSeconds": 39.135,
+          "Processes": 11,
+          "WorkingSetMiB": 439.348,
+          "PrivateWorkingSetMiB": 166.727,
+          "PrivateCommitMiB": 572.102
+        },
+        {
+          "ElapsedSeconds": 40.251,
+          "Processes": 11,
+          "WorkingSetMiB": 439.355,
+          "PrivateWorkingSetMiB": 166.734,
+          "PrivateCommitMiB": 572.109
+        },
+        {
+          "ElapsedSeconds": 41.357,
+          "Processes": 11,
+          "WorkingSetMiB": 439.395,
+          "PrivateWorkingSetMiB": 166.773,
+          "PrivateCommitMiB": 572.188
+        },
+        {
+          "ElapsedSeconds": 42.467,
+          "Processes": 11,
+          "WorkingSetMiB": 439.402,
+          "PrivateWorkingSetMiB": 166.781,
+          "PrivateCommitMiB": 572.176
+        },
+        {
+          "ElapsedSeconds": 43.603,
+          "Processes": 11,
+          "WorkingSetMiB": 439.406,
+          "PrivateWorkingSetMiB": 166.785,
+          "PrivateCommitMiB": 572.16
+        },
+        {
+          "ElapsedSeconds": 44.722,
+          "Processes": 11,
+          "WorkingSetMiB": 439.348,
+          "PrivateWorkingSetMiB": 166.727,
+          "PrivateCommitMiB": 572.102
+        },
+        {
+          "ElapsedSeconds": 45.838,
+          "Processes": 11,
+          "WorkingSetMiB": 439.383,
+          "PrivateWorkingSetMiB": 166.734,
+          "PrivateCommitMiB": 572.109
+        },
+        {
+          "ElapsedSeconds": 46.947,
+          "Processes": 11,
+          "WorkingSetMiB": 439.391,
+          "PrivateWorkingSetMiB": 166.742,
+          "PrivateCommitMiB": 572.117
+        },
+        {
+          "ElapsedSeconds": 48.068,
+          "Processes": 11,
+          "WorkingSetMiB": 439.438,
+          "PrivateWorkingSetMiB": 166.789,
+          "PrivateCommitMiB": 572.184
+        },
+        {
+          "ElapsedSeconds": 49.184,
+          "Processes": 11,
+          "WorkingSetMiB": 439.422,
+          "PrivateWorkingSetMiB": 166.773,
+          "PrivateCommitMiB": 572.148
+        },
+        {
+          "ElapsedSeconds": 50.316,
+          "Processes": 11,
+          "WorkingSetMiB": 439.469,
+          "PrivateWorkingSetMiB": 166.82,
+          "PrivateCommitMiB": 572.195
+        },
+        {
+          "ElapsedSeconds": 51.437,
+          "Processes": 11,
+          "WorkingSetMiB": 439.652,
+          "PrivateWorkingSetMiB": 166.934,
+          "PrivateCommitMiB": 572.422
+        },
+        {
+          "ElapsedSeconds": 52.579,
+          "Processes": 11,
+          "WorkingSetMiB": 439.613,
+          "PrivateWorkingSetMiB": 166.895,
+          "PrivateCommitMiB": 572.344
+        },
+        {
+          "ElapsedSeconds": 53.688,
+          "Processes": 11,
+          "WorkingSetMiB": 439.828,
+          "PrivateWorkingSetMiB": 166.934,
+          "PrivateCommitMiB": 572.277
+        },
+        {
+          "ElapsedSeconds": 54.795,
+          "Processes": 11,
+          "WorkingSetMiB": 439.867,
+          "PrivateWorkingSetMiB": 166.973,
+          "PrivateCommitMiB": 572.336
+        },
+        {
+          "ElapsedSeconds": 55.907,
+          "Processes": 11,
+          "WorkingSetMiB": 439.898,
+          "PrivateWorkingSetMiB": 167.004,
+          "PrivateCommitMiB": 572.398
+        },
+        {
+          "ElapsedSeconds": 57.019,
+          "Processes": 11,
+          "WorkingSetMiB": 439.914,
+          "PrivateWorkingSetMiB": 167.02,
+          "PrivateCommitMiB": 572.379
+        },
+        {
+          "ElapsedSeconds": 58.115,
+          "Processes": 11,
+          "WorkingSetMiB": 439.844,
+          "PrivateWorkingSetMiB": 166.949,
+          "PrivateCommitMiB": 572.27
+        },
+        {
+          "ElapsedSeconds": 59.233,
+          "Processes": 11,
+          "WorkingSetMiB": 439.828,
+          "PrivateWorkingSetMiB": 166.934,
+          "PrivateCommitMiB": 572.254
+        },
+        {
+          "ElapsedSeconds": 60.343,
+          "Processes": 11,
+          "WorkingSetMiB": 439.832,
+          "PrivateWorkingSetMiB": 166.938,
+          "PrivateCommitMiB": 572.258
+        }
+      ]
+    },
+    {
+      "Key": "razer-chroma-existing-synapse",
+      "Name": "Razer Chroma",
+      "Version": "AppEngine 4.0.896; Chroma 4.0.63.2610281118",
+      "Scenario": "minimized-default-quick-effects-including-shared-razer-services",
+      "Timestamp": "2026-11-02T20:00:26.1225167+01:00",
+      "Seconds": 60.378,
+      "SampleCount": 54,
+      "CpuTimeSeconds": 1.09375,
+      "CpuPercentMachine": 0.11322,
+      "MeanWorkingSetMiB": 2328.936,
+      "MeanPrivateWorkingSetMiB": 1000.243,
+      "MeanPrivateCommitMiB": 1357.504,
+      "KnownFileBytes": 2858019298,
+      "KnownFileMiB": 2725.62,
+      "Disk": [
+        {
+          "Area": "ProgramFiles64/Razer",
+          "LogicalBytes": 534865971,
+          "AllocatedBytes": 535217808,
+          "Files": 175,
+          "ReadErrors": 0,
+          "AllocationErrors": 0
+        },
+        {
+          "Area": "ProgramFiles32/Razer",
+          "LogicalBytes": 232399283,
+          "AllocatedBytes": 233206344,
+          "Files": 454,
+          "ReadErrors": 0,
+          "AllocationErrors": 0
+        },
+        {
+          "Area": "ProgramFiles32/Razer Chroma SDK",
+          "LogicalBytes": 27687306,
+          "AllocatedBytes": 27927720,
+          "Files": 449,
+          "ReadErrors": 0,
+          "AllocationErrors": 0
+        },
+        {
+          "Area": "ProgramData/Razer",
+          "LogicalBytes": 12090501,
+          "AllocatedBytes": 12222824,
+          "Files": 67,
+          "ReadErrors": 1,
+          "AllocationErrors": 0
+        },
+        {
+          "Area": "LocalAppData/Razer",
+          "LogicalBytes": 1655481513,
+          "AllocatedBytes": 1674746424,
+          "Files": 8957,
+          "ReadErrors": 0,
+          "AllocationErrors": 0
+        },
+        {
+          "Area": "ProgramFiles32/RazerExperienceService",
+          "LogicalBytes": 68557462.0,
+          "AllocatedBytes": null,
+          "Files": 7,
+          "ReadErrors": 0,
+          "AllocationErrors": null
+        },
+        {
+          "Area": "WindowsInstaller/Razer",
+          "LogicalBytes": 326937262.0,
+          "AllocatedBytes": null,
+          "Files": 315,
+          "ReadErrors": 0,
+          "AllocationErrors": null
+        }
+      ],
+      "Samples": [
+        {
+          "ElapsedSeconds": 0.0,
+          "Processes": 35,
+          "WorkingSetMiB": 2340.289,
+          "PrivateWorkingSetMiB": 1011.902,
+          "PrivateCommitMiB": 1379.844
+        },
+        {
+          "ElapsedSeconds": 1.173,
+          "Processes": 35,
+          "WorkingSetMiB": 2339.543,
+          "PrivateWorkingSetMiB": 1011.148,
+          "PrivateCommitMiB": 1378.996
+        },
+        {
+          "ElapsedSeconds": 2.373,
+          "Processes": 35,
+          "WorkingSetMiB": 2339.336,
+          "PrivateWorkingSetMiB": 1010.941,
+          "PrivateCommitMiB": 1371.379
+        },
+        {
+          "ElapsedSeconds": 3.511,
+          "Processes": 35,
+          "WorkingSetMiB": 2332.586,
+          "PrivateWorkingSetMiB": 1004.191,
+          "PrivateCommitMiB": 1359.852
+        },
+        {
+          "ElapsedSeconds": 4.661,
+          "Processes": 35,
+          "WorkingSetMiB": 2332.5,
+          "PrivateWorkingSetMiB": 1004.105,
+          "PrivateCommitMiB": 1359.812
+        },
+        {
+          "ElapsedSeconds": 5.806,
+          "Processes": 35,
+          "WorkingSetMiB": 2331.566,
+          "PrivateWorkingSetMiB": 1003.172,
+          "PrivateCommitMiB": 1359.086
+        },
+        {
+          "ElapsedSeconds": 6.935,
+          "Processes": 35,
+          "WorkingSetMiB": 2329.531,
+          "PrivateWorkingSetMiB": 1001.137,
+          "PrivateCommitMiB": 1357.586
+        },
+        {
+          "ElapsedSeconds": 8.079,
+          "Processes": 35,
+          "WorkingSetMiB": 2328.484,
+          "PrivateWorkingSetMiB": 1000.168,
+          "PrivateCommitMiB": 1356.586
+        },
+        {
+          "ElapsedSeconds": 9.226,
+          "Processes": 35,
+          "WorkingSetMiB": 2328.473,
+          "PrivateWorkingSetMiB": 1000.156,
+          "PrivateCommitMiB": 1356.586
+        },
+        {
+          "ElapsedSeconds": 10.365,
+          "Processes": 35,
+          "WorkingSetMiB": 2328.438,
+          "PrivateWorkingSetMiB": 1000.121,
+          "PrivateCommitMiB": 1356.586
+        },
+        {
+          "ElapsedSeconds": 11.503,
+          "Processes": 35,
+          "WorkingSetMiB": 2328.438,
+          "PrivateWorkingSetMiB": 1000.121,
+          "PrivateCommitMiB": 1356.594
+        },
+        {
+          "ElapsedSeconds": 12.641,
+          "Processes": 35,
+          "WorkingSetMiB": 2327.559,
+          "PrivateWorkingSetMiB": 999.242,
+          "PrivateCommitMiB": 1355.684
+        },
+        {
+          "ElapsedSeconds": 13.779,
+          "Processes": 35,
+          "WorkingSetMiB": 2327.539,
+          "PrivateWorkingSetMiB": 999.262,
+          "PrivateCommitMiB": 1355.723
+        },
+        {
+          "ElapsedSeconds": 14.911,
+          "Processes": 35,
+          "WorkingSetMiB": 2327.316,
+          "PrivateWorkingSetMiB": 999.133,
+          "PrivateCommitMiB": 1355.723
+        },
+        {
+          "ElapsedSeconds": 16.039,
+          "Processes": 35,
+          "WorkingSetMiB": 2327.145,
+          "PrivateWorkingSetMiB": 999.09,
+          "PrivateCommitMiB": 1355.723
+        },
+        {
+          "ElapsedSeconds": 17.187,
+          "Processes": 35,
+          "WorkingSetMiB": 2327.145,
+          "PrivateWorkingSetMiB": 999.09,
+          "PrivateCommitMiB": 1355.723
+        },
+        {
+          "ElapsedSeconds": 18.327,
+          "Processes": 35,
+          "WorkingSetMiB": 2328.215,
+          "PrivateWorkingSetMiB": 1000.148,
+          "PrivateCommitMiB": 1356.906
+        },
+        {
+          "ElapsedSeconds": 19.459,
+          "Processes": 35,
+          "WorkingSetMiB": 2328.375,
+          "PrivateWorkingSetMiB": 1000.285,
+          "PrivateCommitMiB": 1357.059
+        },
+        {
+          "ElapsedSeconds": 20.604,
+          "Processes": 35,
+          "WorkingSetMiB": 2328.375,
+          "PrivateWorkingSetMiB": 1000.285,
+          "PrivateCommitMiB": 1357.059
+        },
+        {
+          "ElapsedSeconds": 21.742,
+          "Processes": 35,
+          "WorkingSetMiB": 2328.316,
+          "PrivateWorkingSetMiB": 1000.227,
+          "PrivateCommitMiB": 1356.953
+        },
+        {
+          "ElapsedSeconds": 22.886,
+          "Processes": 35,
+          "WorkingSetMiB": 2328.289,
+          "PrivateWorkingSetMiB": 1000.199,
+          "PrivateCommitMiB": 1356.902
+        },
+        {
+          "ElapsedSeconds": 24.017,
+          "Processes": 35,
+          "WorkingSetMiB": 2327.312,
+          "PrivateWorkingSetMiB": 999.223,
+          "PrivateCommitMiB": 1355.875
+        },
+        {
+          "ElapsedSeconds": 25.153,
+          "Processes": 35,
+          "WorkingSetMiB": 2326.766,
+          "PrivateWorkingSetMiB": 998.676,
+          "PrivateCommitMiB": 1355.328
+        },
+        {
+          "ElapsedSeconds": 26.289,
+          "Processes": 35,
+          "WorkingSetMiB": 2326.766,
+          "PrivateWorkingSetMiB": 998.676,
+          "PrivateCommitMiB": 1355.328
+        },
+        {
+          "ElapsedSeconds": 27.423,
+          "Processes": 35,
+          "WorkingSetMiB": 2326.766,
+          "PrivateWorkingSetMiB": 998.676,
+          "PrivateCommitMiB": 1355.336
+        },
+        {
+          "ElapsedSeconds": 28.553,
+          "Processes": 35,
+          "WorkingSetMiB": 2326.945,
+          "PrivateWorkingSetMiB": 998.852,
+          "PrivateCommitMiB": 1355.41
+        },
+        {
+          "ElapsedSeconds": 29.686,
+          "Processes": 35,
+          "WorkingSetMiB": 2326.926,
+          "PrivateWorkingSetMiB": 998.832,
+          "PrivateCommitMiB": 1355.41
+        },
+        {
+          "ElapsedSeconds": 30.809,
+          "Processes": 35,
+          "WorkingSetMiB": 2326.926,
+          "PrivateWorkingSetMiB": 998.832,
+          "PrivateCommitMiB": 1355.41
+        },
+        {
+          "ElapsedSeconds": 31.944,
+          "Processes": 35,
+          "WorkingSetMiB": 2326.902,
+          "PrivateWorkingSetMiB": 998.809,
+          "PrivateCommitMiB": 1355.609
+        },
+        {
+          "ElapsedSeconds": 33.089,
+          "Processes": 35,
+          "WorkingSetMiB": 2326.91,
+          "PrivateWorkingSetMiB": 998.816,
+          "PrivateCommitMiB": 1355.609
+        },
+        {
+          "ElapsedSeconds": 34.222,
+          "Processes": 35,
+          "WorkingSetMiB": 2326.891,
+          "PrivateWorkingSetMiB": 998.852,
+          "PrivateCommitMiB": 1355.66
+        },
+        {
+          "ElapsedSeconds": 35.358,
+          "Processes": 35,
+          "WorkingSetMiB": 2326.891,
+          "PrivateWorkingSetMiB": 998.852,
+          "PrivateCommitMiB": 1355.66
+        },
+        {
+          "ElapsedSeconds": 36.501,
+          "Processes": 35,
+          "WorkingSetMiB": 2327.168,
+          "PrivateWorkingSetMiB": 998.871,
+          "PrivateCommitMiB": 1355.664
+        },
+        {
+          "ElapsedSeconds": 37.645,
+          "Processes": 35,
+          "WorkingSetMiB": 2328.637,
+          "PrivateWorkingSetMiB": 999.211,
+          "PrivateCommitMiB": 1356.254
+        },
+        {
+          "ElapsedSeconds": 38.774,
+          "Processes": 35,
+          "WorkingSetMiB": 2328.66,
+          "PrivateWorkingSetMiB": 999.215,
+          "PrivateCommitMiB": 1356.254
+        },
+        {
+          "ElapsedSeconds": 39.918,
+          "Processes": 35,
+          "WorkingSetMiB": 2328.973,
+          "PrivateWorkingSetMiB": 999.309,
+          "PrivateCommitMiB": 1356.422
+        },
+        {
+          "ElapsedSeconds": 41.051,
+          "Processes": 35,
+          "WorkingSetMiB": 2328.938,
+          "PrivateWorkingSetMiB": 999.273,
+          "PrivateCommitMiB": 1356.293
+        },
+        {
+          "ElapsedSeconds": 42.183,
+          "Processes": 35,
+          "WorkingSetMiB": 2328.91,
+          "PrivateWorkingSetMiB": 999.246,
+          "PrivateCommitMiB": 1356.242
+        },
+        {
+          "ElapsedSeconds": 43.31,
+          "Processes": 35,
+          "WorkingSetMiB": 2328.852,
+          "PrivateWorkingSetMiB": 999.188,
+          "PrivateCommitMiB": 1356.242
+        },
+        {
+          "ElapsedSeconds": 44.452,
+          "Processes": 35,
+          "WorkingSetMiB": 2328.855,
+          "PrivateWorkingSetMiB": 999.191,
+          "PrivateCommitMiB": 1356.242
+        },
+        {
+          "ElapsedSeconds": 45.591,
+          "Processes": 35,
+          "WorkingSetMiB": 2328.703,
+          "PrivateWorkingSetMiB": 999.117,
+          "PrivateCommitMiB": 1356.238
+        },
+        {
+          "ElapsedSeconds": 46.744,
+          "Processes": 35,
+          "WorkingSetMiB": 2328.762,
+          "PrivateWorkingSetMiB": 999.18,
+          "PrivateCommitMiB": 1356.238
+        },
+        {
+          "ElapsedSeconds": 47.881,
+          "Processes": 35,
+          "WorkingSetMiB": 2328.762,
+          "PrivateWorkingSetMiB": 999.18,
+          "PrivateCommitMiB": 1356.238
+        },
+        {
+          "ElapsedSeconds": 49.011,
+          "Processes": 35,
+          "WorkingSetMiB": 2328.793,
+          "PrivateWorkingSetMiB": 999.211,
+          "PrivateCommitMiB": 1356.289
+        },
+        {
+          "ElapsedSeconds": 50.137,
+          "Processes": 35,
+          "WorkingSetMiB": 2328.793,
+          "PrivateWorkingSetMiB": 999.211,
+          "PrivateCommitMiB": 1356.289
+        },
+        {
+          "ElapsedSeconds": 51.274,
+          "Processes": 35,
+          "WorkingSetMiB": 2328.793,
+          "PrivateWorkingSetMiB": 999.211,
+          "PrivateCommitMiB": 1356.289
+        },
+        {
+          "ElapsedSeconds": 52.406,
+          "Processes": 35,
+          "WorkingSetMiB": 2328.562,
+          "PrivateWorkingSetMiB": 999.188,
+          "PrivateCommitMiB": 1356.289
+        },
+        {
+          "ElapsedSeconds": 53.551,
+          "Processes": 35,
+          "WorkingSetMiB": 2328.215,
+          "PrivateWorkingSetMiB": 999.094,
+          "PrivateCommitMiB": 1356.238
+        },
+        {
+          "ElapsedSeconds": 54.69,
+          "Processes": 35,
+          "WorkingSetMiB": 2328.137,
+          "PrivateWorkingSetMiB": 999.035,
+          "PrivateCommitMiB": 1356.18
+        },
+        {
+          "ElapsedSeconds": 55.823,
+          "Processes": 35,
+          "WorkingSetMiB": 2328.137,
+          "PrivateWorkingSetMiB": 999.035,
+          "PrivateCommitMiB": 1356.18
+        },
+        {
+          "ElapsedSeconds": 56.968,
+          "Processes": 35,
+          "WorkingSetMiB": 2328.137,
+          "PrivateWorkingSetMiB": 999.035,
+          "PrivateCommitMiB": 1356.18
+        },
+        {
+          "ElapsedSeconds": 58.098,
+          "Processes": 35,
+          "WorkingSetMiB": 2328.156,
+          "PrivateWorkingSetMiB": 999.055,
+          "PrivateCommitMiB": 1356.219
+        },
+        {
+          "ElapsedSeconds": 59.238,
+          "Processes": 35,
+          "WorkingSetMiB": 2328.156,
+          "PrivateWorkingSetMiB": 999.055,
+          "PrivateCommitMiB": 1356.219
+        },
+        {
+          "ElapsedSeconds": 60.378,
+          "Processes": 35,
+          "WorkingSetMiB": 2330.016,
+          "PrivateWorkingSetMiB": 999.781,
+          "PrivateCommitMiB": 1357.547
+        }
+      ]
+    }
+  ]
+}
